@@ -1,12 +1,21 @@
-.this {
-    > is.sass {
-        background-color: black;
-    }
-}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Tiro+Bangla|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Niramit|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cairo|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700');
 body {
     background-color: #eeecea;
     background-color: grey;
-
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Tiro Bangla', sans-serif;
+    font-family: 'Niramit',  sans-serif;
+    font-family: 'Poppins',  sans-serif;
+    font-family: 'Fira Sans',  sans-serif;
+    font-family: 'Cairo',  sans-serif;
+    font-family: 'Cabin',  sans-serif;
 }
 h1,h2,h3,h4,h5,body,html,ul {
     margin: 0;
@@ -15,6 +24,28 @@ h1,h2,h3,h4,h5,body,html,ul {
 li {
     list-style: none;
 }
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+/// 
+
+@mixin pointer {
+    content: "";
+    background: inherit;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: -10px;
+    transform: rotate(45deg);
+    border-radius: 0 0 0 2px;
+}
+
+
+/// 
+/// 
+/// 
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -61,7 +92,7 @@ li {
 
 }
 
-.list-skills { 
+.list_skills { 
     text-align: right;
     padding-right: 16px;
     h2 {
@@ -76,12 +107,90 @@ li {
         // list-style: initial;
         // list-style-position: inside;
     }
-    ul {
+    ul, li {
+        position: relative;
+        // font-weight: bold;
     }
     .sub_skill {
         // text-align: left;
-        h3 {
-            padding: 8px 0;
+        position: relative;
+        margin: 8px 0px 8px 28px;
+        // padding-top: 8px;
+        // padding-bottom: 8px;
+        .primary_list {
+            position: relative;
+            // &::after {
+            //     content: "";    
+            //     position: absolute;
+            //     right: 0;
+            //     top: 6px;
+            //     width: 2px;
+            //     height: calc(100% - 6px - 8px);
+            //     background: #85857e;
+            // }            
+        }
+        .secondary_list  {
+            position: relative;
+            padding-right: 10px;
+            margin-right: 6px;
+            &::after {
+                content: "";    
+                position: absolute;
+                right: 0;
+                top: 6px;
+                width: 2px;
+                height: calc(100% - 6px - 8px);
+                background: #85857e;
+            }
+
+        }
+        
+        h3, .title1 {
+            font-weight: bold;
+            font-size: 22px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .title1 li, .title2 li {
+            font-size: 17px;
+            font-weight: normal;
+        }
+
+        // https://freefrontend.com/css-timelines/
+        // https://codepen.io/brady_wright/pen/NNOvrW?editors=1100
+        // https://codepen.io/nomisoft/pen/Lbmvxp/
+        // https://codepen.io/NielsVoogt/pen/MbMMxv/
+        // https://codepen.io/Devcrud/pen/XWboGgL
+        .timeline-marker {
+            position: absolute;
+            top: 0; 
+            bottom: 0; 
+            right: -16px;
+            width: 15px;
+            &:before {
+                // BALL
+                content: "";
+                position: absolute;
+                top: 8px;
+                right: 4px;
+                width: 8px;
+                height: 8px;
+                background: black;
+                border: 1px solid transparent;
+                border-radius: 100%;
+            }
+            &:after {
+                // LINE
+                content: "";
+                width: 2px;
+                background: #85857e;
+                display: block;
+                position: absolute;
+                top: 24px; bottom: 0; left: 6px;
+            }
+            .timeline-item:last-child &:after {
+                content: none;
+            }
         }
 
     }
