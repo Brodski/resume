@@ -1,19 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+</head>
 
-<style>
-  a {
-    display: block;
-  }
-</style>
 <body>
-  <div>
-    <h1> 
-        Chris Brodski
-    </h1>
-    <div>
-        <a href="/resume"> Resume </a>
+    <div class="       ">
+
+        <div class="heading">
+            <div class="skew_box"></div>
+            <div class="name">
+                <h1>Christopher Brodski </h1>
+            </div>
+        </div>
+        <!-- <div class="h_divider1"></div> -->
+        <div class="row container">
+            <div class="column bg-grow list_skills">
+                <div aria-label="profile">
+                  <div class="face">
+                    <img src="myface.jpeg">
+                    <ul>
+                        <!-- <li> Software Developer</li> -->
+                        <li> cbrodski@gmail.com</li>
+                        <li> Denver, CO </li>
+                    </ul>
+                  </div>
+                    <h2 class="title_big">EDUCATION</h2>
+                </div>
+
+                <div class="education" aria-label="education">
+                    <!-- <h2 class="title_big">EDUCATION</h2> -->
+                    <h3> B.S. Computer Science</h3>
+                    <p>Metropolitan  State University of Denver</p>
+                    <p><i>GPA: 3.51</i></p>
+                    <h3> B.S. Applied Mathematics</h3>
+                    <p>University of Colorado Denver</p>
+                </div>
+                <!-- 
+                ◾
+                ◦
+                 -->
+                <div>
+                    <h2 class="title_big">SKILLS</h2>
+                        <div class="sub_skill">
+                            <!-- <div class="timeline-marker"></div> -->
+                            <h3 class="title1">Languages </h3>   
+                            <ul>
+                                <!-- <h4 class="title2"> Overview </h4> -->
+                                <ul class="secondary_list"> 
+                                    <li> Javascript</li>
+                                    <li> Java </li>
+                                    <li> Kotlin </li>
+                                    <li> Python </li>
+                                    <li> C# </li>
+                                </ul>
+                            </ul>
+                        </div>
+
+                        <div class="sub_skill">
+                             <!-- <div class="timeline-marker"></div> -->
+                            <h3 class="title1">Frontend </h3>  
+                            <ul> 
+                                <h4 class="title2"> Client-Side </h4>
+                                <ul class="secondary_list"> 
+                                    <li> React </li>
+                                    <li> HTML / CSS / Javascript</li>
+                                    <li> Browser Extensions </li>
+                                </ul>
+                                <h4 class="title2"> Server-Side </h4>
+                                <ul class="secondary_list"> 
+                                    <li> NodeJS </li>
+                                    <li> EJS </li>
+                                    <li> Java Server Pages (JSP) </li>
+                            </ul>
+                        </div>
+
+                        <div class="sub_skill">
+                            <!-- <div class="timeline-marker"></div> -->
+                               <h3 class="title1">Backend </h3>  
+                               <ul> 
+                                    <h4 class="title2"> REST API </h4>
+                                    <ul class="secondary_list"> 
+                                        <li> NodeJS / ExpressJS </li>
+                                        <li> Java Servlets / Sping Boot </li>
+                                    </ul>
+                                    <h4 class="title2"> Database / Storage  </h4>
+                                    <ul class="secondary_list"> 
+                                        <li> S3 </li>
+                                        <li> MongoDB  </li>
+                                    </ul>
+                        </div>
+
+                        <div class="sub_skill">
+                            <h3 class="title1">Cloud Computing </h3>  
+                            <ul> 
+                                <h4 class="title2"> AWS </h4>
+                                <ul class="secondary_list"> 
+                                    <li> S3 </li>
+                                    <li> Route 53 </li>
+                                    <li> Elastic Beanstalk </li>
+                                    <li> IAM </li>
+                                    <li> CloudFront </li>
+                                </ul>
+                        </div>
+
+                        <div class="sub_skill">
+                            <h3 class="title1"> Dev Ops </h3>  
+                            <ul> 
+                                <h4 class="title2"> Novice Skill</h4>
+                                <ul class="secondary_list"> 
+                                    <li> Docker </li>
+                                    <li> Microservices </li>
+                                    <li> Kubernetes </li>
+                                    <li> Jenkins </li>
+                                </ul>
+                            </ul>
+                        </div>
+
+                        <div class="sub_skill">
+                            <h3 class="title1"> Linux Networking </h3>  
+                            <ul> 
+                                <!-- <h4 class="title2"> (Essential Commands) </h4> -->
+                                <ul class="secondary_list"> 
+                                    <li> nslookup / dig </li>
+                                    <li> ifconfig </li>
+                                    <li> netstat </li>
+                                    <li> traceroute </li>
+                                    <li> curl </li>
+                                    <li> vim / awk / grep </li>
+                                </ul>
+                            </ul>
+
+                        </div>
+                </div>
+            </div>
+            <div class="column work">
+              <h1 class="title_big"> Work History </h1>
+               <% jobs.forEach( job => {  %>
+                <%- include('./job', {job}) %>
+               <% }) %>
+               
+                <h1 class="title_big"> Projects </h1>
+
+                <% projects.forEach( proj => {  %>
+                 <%- include('./job', {job: proj}) %>
+                <% }) %>
+
+
+        </div>
     </div>
-  </div>
 </body>
 </html>
