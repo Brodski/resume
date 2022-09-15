@@ -40,19 +40,19 @@
 body {
     background-color: grey;
     background-color: #eeecea;
+    font-family: 'Cabin',  sans-serif; // ugly
+    font-family: 'Poppins',  sans-serif; // not good
+    font-family: 'Fira Sans Condensed',  sans-serif; // i dont like
     font-family: 'Fira Sans',  sans-serif;  // big
     font-family: 'Oswald', sans-serif; // too crazy
     font-family: 'Tiro Bangla', sans-serif; // to boring
     font-family: 'Niramit',  sans-serif;
-    font-family: 'Poppins',  sans-serif;
-    font-family: 'Cairo',  sans-serif;
-    font-family: 'Cabin',  sans-serif;
     font-family: 'Jost',  sans-serif;
-    font-family: 'Barlow Semi Condensed',  sans-serif;
+    font-family: 'Cairo',  sans-serif;
     font-family: 'Saira Condensed',  sans-serif;
-    // font-family: 'Fira Sans Condensed',  sans-serif;
+    font-family: 'Barlow Semi Condensed',  sans-serif;
 
-    // Barlow Semi Condensed > Saira Condensed >  Jost > Niramit >  /Fira+Sans+Condensed      > Poppins (too big) > Fira > Cabin 
+    // Barlow Semi Condensed > Saira Condensed >  Jost > Niramit >  Fira Sans Condensed      > Poppins (too big) > Fira > Cabin 
 }
 h1,h2,h3,h4,h5,body,html,ul,p {
     margin: 0;
@@ -73,51 +73,53 @@ li {
 }
 .row {
     display: grid;
-    grid-template-columns: 320px minmax(0, 1fr);
+    grid-template-columns: 280px minmax(0, 1fr);
 }
 .heading {
     position: relative;
     text-align: center;
     color: var(--colorTextWhite);
     .skew_box {
-        // height: 100%;
-        // width: 100%;
-        // background-image: linear-gradient(45deg, #6303B1, #ff0099);
-        // transform: skewY(-11deg);
-        // transform: rotate(10deg) translateY(-60%);
-        // position: absolute;
+        position: absolute;
         background-color: var(--colorblue);
         clip-path: polygon(102% 0%, 0 74%, 100% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 49%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
         width: 100%;
         height: 120%;
-        // margin: 0 -50vw;
-        // padding: 0 50vw;
-        position:absolute;
+        height: 140%;
     }
     .name {
         position: relative;
         z-index: 10;
-        padding: 20px 0;
+        // padding: 20px 0;
+        padding-bottom: 8px;
+        padding-top: 15px;
         // background: linear-gradient(-4deg, black 51%, white 0%);
+    }
+    ul {
+        position: relative;
+        position: absolute;
+        top: 24px;
+        right: 10px;
+        color: var(--colorTextWhite);
+        z-index: 11;
+        line-height: 22px;
+        font-size: 20px;
+        margin-top: -8px;
+
     }
 
 }
 .bg-grow {
 
     background-color: var(--colorgrey);
-    padding-top: 100px;
+    padding-top: 128px;
     margin-top: -100px;
     margin-left: -100vh;
     padding-left: 100vh;
 
 }
 
-.education {
-    p {
-        color: var(--colorgold);
-    }
-}
 
 .secondary_list  {
     position: relative;
@@ -136,16 +138,6 @@ li {
     }
 }
 
-.face {
-    ul {
-        text-align: right;
-    }
-    img {
-        width: 100%;
-        border-radius: 50%;
-        border: 2px solid var(--colorblue);
-    }
-}
 .title1 {
     background-color: #3f3f27cc;
     background-color: #2a2e33;
@@ -177,20 +169,13 @@ li {
     font-size: 17px;
     font-weight: normal;
 }
-.education {
-    h3 {
-        font-size: 28px;
-    }
-}
 .title_big {
-    border-top: 2px solid var(--colorgold);
-    border-bottom: 2px solid var(--colorgold);
     letter-spacing: 4px;
     
 
 }
 .work {
-    margin-left: 24px;
+    margin-left: 18px;
 
     .title_big {
         margin: 18px 0;
@@ -201,18 +186,22 @@ li {
         color: black;
         text-align: left;
         border: 0;
+        font-size: 50px;
         // line-height: 70px;
         // font-size: 70px;
     
         // background: linear-gradient(90deg, rgba(42,46,51,1) 0%, rgba(42,46,51,1) 31%, rgba(42,46,51,0) 100%);
     }
     .job {
-        border-top: 2px solid black;
-        border-radius: 3px;
         margin-top: 0px;
         margin-bottom: 32px;
+        margin-right: 12px;
+
         .job_item_heading {
             page-break-inside: avoid;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            // border-radius: 3px;
         }
         
         h3 {
@@ -248,15 +237,13 @@ li {
             content: "◆";
 
             margin-right: 12px;
-            margin-left: 16px;
+            // margin-left: 16px;
         }
         li {
-            text-indent: -53px;
-            margin-left: 59px;
-        }
-        > ul {
-            border-top: 2px solid black;
-            // margin-top: 18px;
+            text-indent: -35px;
+            margin-left: 50px;
+            font-size: 23px;
+
         }
         > ul ul li {
 
@@ -280,7 +267,7 @@ li {
 
 .list_skills { 
     text-align: right;
-    padding-right: 16px;
+    padding-right: 10px;
     // width: 325px;
     p, li {
         margin: 0;
@@ -293,6 +280,21 @@ li {
         position: relative;
     }
 
+    .title_big {
+        margin: 14px 0;
+        border-top: 2px solid var(--colorgold);
+        border-bottom: 2px solid var(--colorgold);
+    }
+
+    .education {
+        h3 {
+            font-size: 27px;
+        }
+        p {
+            color: var(--colorgold);
+            font-size: 17px;
+        }
+    }
     .sub_skill {
         position: relative;
         margin: 8px 0px;
