@@ -23,18 +23,18 @@
             <div class="column bg-grow list_skills">
                 <div aria-label="profile">
                   <div class="face">
-                    <img src="myface.jpeg">
+                    <!-- <img src="myface.jpeg"> -->
                     <ul>
                         <!-- <li> Software Developer</li> -->
                         <li> cbrodski@gmail.com</li>
                         <li> Denver, CO </li>
                     </ul>
                   </div>
-                    <h2 class="title_big">EDUCATION</h2>
+                    <!-- <h2 class="title_big">EDUCATION</h2> -->
                 </div>
 
                 <div class="education" aria-label="education">
-                    <!-- <h2 class="title_big">EDUCATION</h2> -->
+                    <h2 class="title_big">EDUCATION</h2>
                     <h3> B.S. Computer Science</h3>
                     <p>Metropolitan  State University of Denver</p>
                     <p><i>GPA: 3.51</i></p>
@@ -77,6 +77,7 @@
                                     <li> NodeJS </li>
                                     <li> EJS </li>
                                     <li> Java Server Pages (JSP) </li>
+                                </ul>
                             </ul>
                         </div>
 
@@ -94,6 +95,7 @@
                                         <li> S3 </li>
                                         <li> MongoDB  </li>
                                     </ul>
+                                </ul>
                         </div>
 
                         <div class="sub_skill">
@@ -107,6 +109,7 @@
                                     <li> IAM </li>
                                     <li> CloudFront </li>
                                 </ul>
+                            </ul>
                         </div>
 
                         <div class="sub_skill">
@@ -138,19 +141,26 @@
 
                         </div>
                 </div>
+            
+            
+              <div class="pagebreak"></div>
             </div>
+            
             <div class="column work">
-              <h1 class="title_big"> Work History </h1>
-               <% jobs.forEach( job => {  %>
-                <%- include('./job', {job}) %>
-               <% }) %>
+              
+                <h1 class="title_big"> Work History </h1>
+                 <% jobs.forEach( job => {  %>
+                  <%- include('./job', {job}) %>
+                 <% }) %>
                
                 <h1 class="title_big"> Projects </h1>
-
                 <% projects.forEach( proj => {  %>
-                 <%- include('./job', {job: proj}) %>
+                  <%- include('./job', {job: proj}) %>
                 <% }) %>
 
+
+        <div class="pagebreak"></div>
+            </div>
 
         </div>
     </div>

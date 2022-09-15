@@ -6,6 +6,27 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:400,700");
 @import url("https://fonts.googleapis.com/css?family=Cairo|Roboto:400,700");
 @import url("https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Jost|Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Saira+Condensed|Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Roboto:400,700");
+@page {
+  margin: 0cm;
+}
+h1, h2, h3, h4, h5 {
+  page-break-after: avoid;
+}
+
+body {
+  page-break-after: always;
+}
+
+@media print {
+  .pagebreak {
+    page-break-before: always;
+    height: 1px;
+  } /* page-break-after works, as well */
+}
 :root {
   --colorblue: #2a2e33;
   --colorTextWhite: #edf1f4;
@@ -17,12 +38,16 @@
 body {
   background-color: grey;
   background-color: #eeecea;
+  font-family: "Fira Sans", sans-serif;
   font-family: "Oswald", sans-serif;
   font-family: "Tiro Bangla", sans-serif;
   font-family: "Niramit", sans-serif;
   font-family: "Poppins", sans-serif;
-  font-family: "Fira Sans", sans-serif;
   font-family: "Cairo", sans-serif;
+  font-family: "Cabin", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Saira Condensed", sans-serif;
 }
 
 h1, h2, h3, h4, h5, body, html, ul, p {
@@ -73,6 +98,10 @@ li {
   padding-left: 100vh;
 }
 
+.education p {
+  color: var(--colorgold);
+}
+
 .secondary_list {
   position: relative;
   padding-right: 10px;
@@ -90,7 +119,7 @@ li {
 }
 
 .face ul {
-  text-align: center;
+  text-align: right;
 }
 .face img {
   width: 100%;
@@ -131,26 +160,25 @@ li {
 }
 
 .work {
-  margin: 0 36px;
+  margin-left: 24px;
 }
 .work .title_big {
-  margin-top: 24px;
+  margin: 18px 0;
   color: var(--colorgold);
-  color: black;
-  border-color: black;
-  text-align: left;
-  border-top: 0;
-  border: 0;
-  margin-bottom: 24px;
-  background: linear-gradient(90deg, rgb(42, 46, 51) 0%, rgb(42, 46, 51) 31%, rgba(42, 46, 51, 0) 100%);
   color: var(--colorTextWhite);
-  padding-left: 8px;
+  color: var(--colorblue);
+  color: black;
+  text-align: left;
+  border: 0;
 }
 .work .job {
   border-top: 2px solid black;
   border-radius: 3px;
   margin-top: 0px;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
+}
+.work .job .job_item_heading {
+  page-break-inside: avoid;
 }
 .work .job h3 {
   font-weight: 800;
@@ -189,7 +217,6 @@ li {
 }
 .work .job > ul {
   border-top: 2px solid black;
-  margin-top: 18px;
 }
 .work .job > ul ul li {
   font-size: 20px;
@@ -218,6 +245,8 @@ li {
 .list_skills .sub_skill {
   position: relative;
   margin: 8px 0px;
+  page-break-after: avoid;
+  page-break-inside: avoid;
   color: #fefff9;
   background-color: rgba(63, 63, 39, 0.8);
   background-color: transparent;

@@ -6,7 +6,29 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Cairo|Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Jost|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Saira+Condensed|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Roboto:400,700');
 
+@page {
+    margin: 0cm;
+    // size: A4;
+    // size: letter;
+  }
+
+  h1, h2, h3, h4, h5 {
+    page-break-after: avoid;
+  }
+  body {
+    page-break-after:always;
+  }
+  @media print {
+    .pagebreak { 
+        page-break-before: always; 
+        height: 1px;
+    } /* page-break-after works, as well */
+}
 :root {
     --colorblue: #2a2e33;
     --colorTextWhite: #edf1f4;
@@ -18,13 +40,19 @@
 body {
     background-color: grey;
     background-color: #eeecea;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Tiro Bangla', sans-serif;
+    font-family: 'Fira Sans',  sans-serif;  // big
+    font-family: 'Oswald', sans-serif; // too crazy
+    font-family: 'Tiro Bangla', sans-serif; // to boring
     font-family: 'Niramit',  sans-serif;
     font-family: 'Poppins',  sans-serif;
-    font-family: 'Fira Sans',  sans-serif;
     font-family: 'Cairo',  sans-serif;
-    // font-family: 'Cabin',  sans-serif;
+    font-family: 'Cabin',  sans-serif;
+    font-family: 'Jost',  sans-serif;
+    font-family: 'Barlow Semi Condensed',  sans-serif;
+    font-family: 'Saira Condensed',  sans-serif;
+    // font-family: 'Fira Sans Condensed',  sans-serif;
+
+    // Barlow Semi Condensed > Saira Condensed >  Jost > Niramit >  /Fira+Sans+Condensed      > Poppins (too big) > Fira > Cabin 
 }
 h1,h2,h3,h4,h5,body,html,ul,p {
     margin: 0;
@@ -85,7 +113,11 @@ li {
 
 }
 
-
+.education {
+    p {
+        color: var(--colorgold);
+    }
+}
 
 .secondary_list  {
     position: relative;
@@ -106,7 +138,7 @@ li {
 
 .face {
     ul {
-        text-align: center;
+        text-align: right;
     }
     img {
         width: 100%;
@@ -158,25 +190,30 @@ li {
 
 }
 .work {
-    margin: 0 36px;
+    margin-left: 24px;
+
     .title_big {
-        margin-top: 24px;
+        margin: 18px 0;
+        // padding-left: 8px;
         color: var(--colorgold);
-        color: black;
-        border-color: black;
-        text-align: left;
-        border-top: 0;
-        border: 0;
-        margin-bottom: 24px;
-        background: linear-gradient(90deg, rgba(42,46,51,1) 0%, rgba(42,46,51,1) 31%, rgba(42,46,51,0) 100%);
         color: var(--colorTextWhite);
-        padding-left: 8px;
+        color: var(--colorblue);
+        color: black;
+        text-align: left;
+        border: 0;
+        // line-height: 70px;
+        // font-size: 70px;
+    
+        // background: linear-gradient(90deg, rgba(42,46,51,1) 0%, rgba(42,46,51,1) 31%, rgba(42,46,51,0) 100%);
     }
     .job {
         border-top: 2px solid black;
         border-radius: 3px;
         margin-top: 0px;
-        margin-bottom: 64px;
+        margin-bottom: 32px;
+        .job_item_heading {
+            page-break-inside: avoid;
+        }
         
         h3 {
             font-weight: 800;  
@@ -219,7 +256,7 @@ li {
         }
         > ul {
             border-top: 2px solid black;
-            margin-top: 18px;
+            // margin-top: 18px;
         }
         > ul ul li {
 
@@ -255,10 +292,13 @@ li {
     ul, li {
         position: relative;
     }
+
     .sub_skill {
         position: relative;
         margin: 8px 0px;
     
+        page-break-after: avoid;
+        page-break-inside: avoid;
         
         color: #fefff9;
         background-color: #3f3f27cc;

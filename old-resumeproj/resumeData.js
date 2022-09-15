@@ -7,7 +7,16 @@ class Job {
         this.descriptions = descriptions
     }
 }
-const desc1 = ['build the website', 'maintain the website', 'work with design']
+const desc1 = [
+
+            "Used Adobe’s content management system, AEM, to manage and develop the company's website.",
+            'Both frontend and backend development, using JSP, Java Servlets, HTML, Javascript, SASS and CSS.', 
+            'Work with designers, marketing/SEO, and the content team to reach business requirements.', 
+            'Frontend work includes building components for the content team, allowing them to drag and drop the components on the page. Providing them the option to adjust the components for functionality or design.',
+            'Backend work includes working with JSTL and Java Servlets that communicate with pages for dynamic content, and working with the JCR API to crawl nodes and do content edits or maintenance on pages.',
+            "Improved the homepage's Lighthouse rating by 20-35 points in every category over the last year.",
+            'Found tools to help test code and debug code in production or stage without redeploying, saving a couple hours each time and reducing the risk of breaking anything during the process.'
+        ]
 const job1 = new Job("Web Developer", "Ping Identity", "Sept 2020", "Present", desc1)
 
 
@@ -15,10 +24,14 @@ const job1 = new Job("Web Developer", "Ping Identity", "Sept 2020", "Present", d
 
 
 
-
-const desc2 = ['Helped building a proxy server to route traffic and get data on Roku device', 
-                'Read har files and construct a database(mongo) for a proxy server with Flask/Python to query',
-                'sit and twirl my thumbs all day'
+const desc2 = [
+                // "Worked on a partial DevOps/SRE team that specialized in platform, quality assurance, and infrastructure.",
+                "Worked on a DevOps/SRE team. Daily use of linux VMs and our cloud computing virtualization platform, VSphere",
+                'Helped build a proxy server written in Flask/Python to route traffic and query data from a MongoDB database',
+                "Wrote a testing tool in python to QA a cluster of DHCP servers. The script used the hypervisor's API to shut down worker VMs and master VMs",
+                "Additionally deployed docker apps (running Telegraf) to gather metrics from the VMs running the DHCP servers, sending the data to our splunk server.",     //Debugging included going into the docker via <code> docker exec -it  </code>"
+                "Help built a new test environments for an existing project in AWS by redeploying that project at a scaled down cluster size. This involved researching company documents and working with the team that managed that project; editing configuration files like Terraform, then executing the deployment."
+         
                 ]
 const job2 = new Job("Platform Infrastructure Integration / Automation Engineer", "Charter Communications", "Dec 2018", "Oct 2019", desc2)
 
@@ -84,7 +97,7 @@ const projNode = new Job("Name: Bski Captions", null, "https://bski.one", null, 
 
 const descMV = ['Firefox and Chrome browser extension', 
                 "Automatically adds Event Listeners to any page with a video elements, the events intelligently respond to user's mouse scroll",
-                "Allows user to control volume, skip forward/back, and more with their mouse wheel; it solves the problem of frustately trying to point and click on videos with horrible UI and impossibly thin icon"
+                "Allows user to control volume, skip forward/back, and more with their mouse wheel; it solves the problem of frustately trying to point and click on videos with horrible UI and absurdly thin icons"
         ]
 const projMV = new Job("Name: Bski Control Video with Mouse", null, "Mozilla Addons: https://addons.mozilla.org/en-US/firefox/addon/bski-control-video-with-mouse", null, descMV)
 
@@ -102,11 +115,19 @@ const projFiles = new Job("Name: Local File Browsing", null, "Mozilla Addons: ht
 
 
 
+const descResume =["This résumé is not a template off the internet. I made it.",
+                    "Coded & designed with NodeJS, EJS, and SASS / CSS", 
+                 
+            ]
+const projResume = new Job("Name: Resume", null, "github.com/Brodski", null, descResume)
+
+
+
 
 
 
 
 const Jobs = [job1, job2]
-const Projects = [projNode, projVFO, projMV, projFiles, projAndriod ]
+const Projects = [projNode, projVFO, projMV, projFiles, projAndriod, projResume ]
 module.exports = { Jobs, Projects };
 

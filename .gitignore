@@ -134,3 +134,4 @@ dist
 old-resumeproj/node_modules
 old-resumeproj/.vscode
 *.css.map
+.DS_Store
