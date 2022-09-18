@@ -1,9 +1,18 @@
 
-<div class="blogItem">
-    <h3> Company: <%=  job.company  %> </h3>
-    <p> Start: <%=  job.start  %> </p>
-    <p> End: <%=  job.end  %> </p>
-    <p> Position: <%=  job.position  %> </p>
-    <p> Description: <%=  job.description  %> </p>
-    </a>
+<div class="job">
+    <%= console.log('---------------------------------') %>
+    <%= console.log(job) %>
+    <div class="job_item_heading">
+        <div class="eyebrow_wrap">
+            <h4 class="date"> <%= job?.start + (job?.end ? ' - ' + job.end : '') %> </h4>
+            <!-- <h5 class="company">  <%= (job?.company ? "at "+ job.company : "Personal project") %> </h5> -->
+        </div>
+        <h3>  <%= job?.title %> </h3>
+        <h5 class="company">  <%= (job?.company ? "at "+ job.company : "Personal project") %> </h5>
+    </div>
+    <ul class="secondary_listzzz">
+        <% job?.descriptions.forEach( info => { %>
+            <li> <%- info %> </li>
+        <% }) %>
+    </ul> 
 </div>
