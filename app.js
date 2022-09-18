@@ -16,6 +16,6 @@ app.get("/resume", function(req, res) {
     res.render('index', { jobs: Jobs, projects: Projects })
 })
 
-app.listen(4444, function() {
+app.listen((process.env.PORT || 3000 ), function() {
     console.log("STARTING")
 })

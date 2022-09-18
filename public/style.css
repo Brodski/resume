@@ -173,20 +173,25 @@ li {
   margin-right: 12px;
 }
 .work .job .job_item_heading {
+  padding: 4px 0;
   page-break-inside: avoid;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
+.work .job .job_item_heading .company {
+  font-size: 15px;
+  line-height: 18px;
+}
 .work .job h3 {
   font-weight: 800;
   font-size: 32px;
-  line-height: 32px;
+  line-height: 38px;
 }
 .work .job .date {
-  color: unset;
   color: var(--colorgold);
+  color: black;
   font-size: 15px;
-  font-style: italic;
+  line-height: 18px;
 }
 .work .job .eyebrow_wrap {
   display: flex;
@@ -195,6 +200,7 @@ li {
 .work .job .eyebrow_wrap .company {
   line-height: 30px;
   padding-bottom: 4px;
+  line-height: 18px;
 }
 .work .job li:before {
   content: "x";
@@ -205,11 +211,12 @@ li {
   content: "◽";
   content: "◇";
   content: "◆";
+  font-size: 15px;
   margin-right: 12px;
 }
 .work .job li {
   text-indent: -35px;
-  margin-left: 50px;
+  margin-left: 36px;
   font-size: 23px;
 }
 .work .job > ul ul li {
