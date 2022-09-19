@@ -75,6 +75,9 @@ li {
   text-align: center;
   color: var(--colorTextWhite);
 }
+.heading h1 {
+  font-size: 50px;
+}
 .heading .skew_box {
   position: absolute;
   background-color: var(--colorblue);
@@ -165,7 +168,7 @@ li {
   color: black;
   text-align: left;
   border: 0;
-  font-size: 50px;
+  font-size: 46px;
 }
 .work .job {
   margin-top: 0px;
@@ -202,6 +205,12 @@ li {
   padding-bottom: 4px;
   line-height: 18px;
 }
+.work .job li {
+  text-indent: -35px;
+  text-indent: calc(-8px - 18px);
+  margin-left: 26px;
+  font-size: 23px;
+}
 .work .job li:before {
   content: "x";
   content: "●";
@@ -212,12 +221,7 @@ li {
   content: "◇";
   content: "◆";
   font-size: 15px;
-  margin-right: 12px;
-}
-.work .job li {
-  text-indent: -35px;
-  margin-left: 36px;
-  font-size: 23px;
+  margin-right: 8px;
 }
 .work .job > ul ul li {
   font-size: 20px;

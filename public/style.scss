@@ -79,6 +79,9 @@ li {
     position: relative;
     text-align: center;
     color: var(--colorTextWhite);
+    h1 {
+        font-size: 50px;
+    }
     .skew_box {
         position: absolute;
         background-color: var(--colorblue);
@@ -186,7 +189,7 @@ li {
         color: black;
         text-align: left;
         border: 0;
-        font-size: 50px;
+        font-size: 46px;
         // line-height: 70px;
         // font-size: 70px;
     
@@ -233,23 +236,27 @@ li {
             }
         }
 
-        li:before {
-            content: "x";
-            content: "●";
-            content: "◾"; // big black
-            content: "◦";
-            content: "▪"; // small white
-            content: "◽";
-            content: "◇";
-            content: "◆";
-            font-size: 15px;
-            margin-right: 12px;
-            // margin-left: 16px;
-        }
         li {
+            $margin-bullet: 8px;
+            $margin-left-li: 24px;
+            $text-indent: calc(-#{$margin-bullet} - 18px);
+
             text-indent: -35px;
-            margin-left: 36px;
+            text-indent: $text-indent;
+            margin-left: 26px;
             font-size: 23px;
+            &:before {
+                content: "x";
+                content: "●";
+                content: "◾"; // big black
+                content: "◦";
+                content: "▪"; // small white
+                content: "◽";
+                content: "◇";
+                content: "◆";
+                font-size: 15px;
+                margin-right: $margin-bullet;
+            }
 
         }
         > ul ul li {
