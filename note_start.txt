@@ -1,0 +1,3 @@
+$ nodemon
+or
+$ npm start

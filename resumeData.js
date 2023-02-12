@@ -9,17 +9,24 @@ class Job {
 }
 const desc1 = [
 
-            "Used Adobe’s content management system, AEM, to manage and develop the company's website.",
-            'Both frontend and backend development, using JSP, Java Servlets, HTML, Javascript, SASS and CSS.', 
-            'Work with designers, marketing, SEO team, and the content team to reach business requirements.', 
-            'Frontend work is primarily building web components for the content team and design team. Using JSP, ( HTML, Javascript, CSS/SASS and Java)',
+            "Use Adobe's content management system, AEM, to maintain and develop the company's website.",
+            'Both frontend and backend development, using Java Servlets, JSP, HTML, Javascript, SASS/CSS.', 
+            'Reworked the website that ultimatly improved customer conversion rate by 61%.',
+            'Frontend work: building web components for the content team and design team, enabling static or dynamic pages. Highly experienced in Javascript, HTML, CSS.',
+            // 'Frontend work: building web components for the content team and design team. Using JSP (HTML, Javascript, CSS/SASS and Java)',
             // 'Frontend work includes building web components for the content team, allowing them to drag and drop the components on the page. Providing them the option to adjust the components for functionality or design.',
             // 'Frontend work includes building web components for the content team, using JSP, Javascript, HTML, CSS/SASS and Java',
-            'Backend work includes working with JSP and Java Servlets that communicate with pages for dynamic content, and working with the JCR API to crawl nodes and do content edits or maintenance on pages.',
-            "Improved the homepage's Lighthouse rating by 20-35 points in every category over the last year.",
-            'Implemented tools to help test code and debug code in production or stage without redeploying, saving a couple of hours each time and reducing the risk of breaking anything during the process.'
+            // 'Backend work includes writing pages to used server-side rendering, working with JSP and Java Servlets that communicate with pages for dynamic content.',
+            // `Backend work includes creating Java servlets for certain pages that used client-side rendering,
+            `Backend work: building an API with Java servlets for client-side & server-side rendered pages,
+                writing jobs to crawl content and make edits or other maintenance on pages.`,
+            // "Update our CDN's behavior, AWS Cloudfront, for new and old pages",
+            // 'Wrote jobs that used JCR API to crawl nodes and do content edits or maintenance on pages.',
+            'Work with designers, marketing, SEO team, and the content team to reach business requirements.', 
+            "Improved the homepage's Lighthouse rating by 20-35 points in every category over the last year; performance, accessiblity, SEO, ect.",
+            // 'Implemented tools to help test code and debug code in production or stage without redeploying, saving a couple of hours each time and reducing the risk of breaking anything during the process.'
         ]
-const job1 = new Job("Web Developer", "Ping Identity", "Sept 2020", "Present", desc1)
+const job1 = new Job("Java Web Developer", "Ping Identity", "Sept 2020", "Present", desc1)
 
 
 

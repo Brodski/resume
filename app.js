@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const {Jobs, Projects} = require("./resumeData");
-const { JobsData } = require("./data/resume");
+// const { JobsData } = require("./data/resume");
 
 app.set('view engine', 'ejs')
 app.set('views', './views') // this line not needed b/c views is by default

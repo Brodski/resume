@@ -1,15 +1,15 @@
 
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
-@import url('https://fonts.googleapis.com/css?family=Tiro+Bangla|Roboto:400,700');
-@import url('https://fonts.googleapis.com/css?family=Niramit|Roboto:400,700');
-@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto:400,700');
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:400,700');
-@import url('https://fonts.googleapis.com/css?family=Cairo|Roboto:400,700');
-@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Tiro+Bangla|Roboto:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Niramit|Roboto:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Poppins|Roboto:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Cairo|Roboto:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Jost|Roboto:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Saira+Condensed|Roboto:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Roboto:400,700');
-@import url('https://fonts.googleapis.com/css?family=Jost|Roboto:400,700');
-@import url('https://fonts.googleapis.com/css?family=Saira+Condensed|Roboto:400,700');
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Roboto:400,700');
 
 @page {
     margin: 0cm;
@@ -34,12 +34,12 @@
     --colorTextWhite: #edf1f4;
     --colorgrey: #e2e0df;
     --colorgold: #6f6116;
-    --colorwhite: #eeecea;
   }
 
 body {
     background-color: grey;
     background-color: #eeecea;
+    background-color: #ffffff;
     font-family: 'Cabin',  sans-serif; // ugly
     font-family: 'Poppins',  sans-serif; // not good
     font-family: 'Fira Sans Condensed',  sans-serif; // i dont like
@@ -78,7 +78,8 @@ li {
 .heading {
     position: relative;
     text-align: center;
-    color: var(--colorTextWhite);
+    // color: var(--colorTextWhite);
+    color: #ffffff;
     h1 {
         font-size: 50px;
     }
@@ -105,6 +106,7 @@ li {
         top: 24px;
         right: 10px;
         color: var(--colorTextWhite);
+        color: white;
         z-index: 11;
         line-height: 22px;
         font-size: 20px;
@@ -115,7 +117,8 @@ li {
 }
 .bg-grow {
 
-    background-color: var(--colorgrey);
+    // background-color: var(--colorgrey);
+    background-color: #eeecea;
     padding-top: 128px;
     margin-top: -100px;
     margin-left: -100vh;
@@ -153,10 +156,14 @@ li {
 
 .title2 {
     font-size: 12px;
-    font-size: 14px;
+    font-size: 16px;
+    padding-top: 3px;
+    font-weight: 600;
     font-style: italic;
     color: #f5ef9c;
+    // color: #6f6116;
     color: #6f6116;
+    color: #000000;
     &:after {
         // content: "●"; 
         // content: "◾"; // black
@@ -206,26 +213,27 @@ li {
             border-top: 2px solid black;
             border-bottom: 2px solid black;
             letter-spacing: 1px;
+            margin-bottom: 4px;
             // border-radius: 3px;
             .company {
-                font-size: 15px;
+                font-size: 18px;
                 line-height: 18px;
             }
             h3 {
                 font-weight: 800;  
-                font-size: 32px;
-                line-height: 38px;
-                letter-spacing: 2px;
+                font-size: 36px;
+                line-height: 40px;
+                letter-spacing: 1px;
     
             }
         }
         
         
         .date {
-            color:var(--colorgold);
+            // color:var(--colorgold);
             color: black;
-            font-size: 15px;
-            line-height: 18px;
+            font-size: 18px;
+            line-height: 19px;
             // font-style: italic;
         }
         .eyebrow_wrap {
@@ -242,7 +250,7 @@ li {
             $margin-bullet: 8px;
             $margin-left-li: 24px;
             $text-indent: calc(-#{$margin-bullet} - 18px);
-
+            margin-bottom: 3px;
             text-indent: -35px;
             text-indent: $text-indent;
             margin-left: 26px;
@@ -307,8 +315,9 @@ li {
             font-size: 27px;
         }
         p {
-            color: var(--colorgold);
-            font-size: 17px;
+            // color: var(--colorgold);
+            color: black;
+            font-size: 19px;
         }
     }
     .sub_skill {
