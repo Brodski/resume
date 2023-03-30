@@ -9,6 +9,11 @@
  body {
 	 page-break-after: always;
 }
+
+.secondary_listzzz {
+	break-inside: avoid;
+}
+
  @media print {
 	/* page-break-after works, as well */
 	 .pagebreak {

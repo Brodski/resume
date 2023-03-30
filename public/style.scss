@@ -23,7 +23,11 @@
   body {
     page-break-after:always;
   }
-  @media print {
+.secondary_listzzz {
+	break-inside: avoid;
+}
+
+@media print {
     .pagebreak { 
         page-break-before: always; 
         height: 1px;
