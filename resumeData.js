@@ -56,9 +56,9 @@ const descVFO = ["A website that lets a user login with their youtube account an
                 // 'A single-page web application based on N-tier architecture with Presentation, Logic, and Data layer.', 
                 'A single-page web application.',
 				'Frontend was built using the React framework, Javascript, Materialize CSS framework, and SASS with a focus on React hooks in functional components over lifecycle methods in class components.', 
-                "Client utilizes AJAX and OAuth 2.0 to communicate to Youtube's REST API, retrieving data from the user's Youtube profile and asynchronously renders the returned data specific to each user.", 
+                "Client utilizes AJAX and OAuth 2.0 to communicate to Youtube's REST API, retrieving data from the user's Youtube profile and asynchronously rendering the returned data specific to each user.", 
                 "Built a backend REST API server in Java using the Spring Boot framework with MongoDB database; server performs basic operations like parsing JSON objects and routing for HTTP GET and POST endpoints.",
-			 "I created this app because youtube recommendation algorithm is awful.",
+			 "I created this app because the youtube recommendation algorithm is awful.",
                 ]
 const projVFO = new Job("Name: Video Feed Organizer (VFO)", null, "https://vfo.one", null, descVFO)
 
@@ -85,7 +85,7 @@ const projAndriod = new Job("Name: Brodski Minimalist Music Player With Swipe & 
 
 
 const descNode = [  "A website that allows the user to search for words & phases from a set of videos I have selected.",
-                    'Server runs NodeJS, deployed in AWS Lambda, utilizing a few others AWS services and a MongoDB Atlas cluster.',
+                    'Server runs NodeJS, deployed in AWS Lambda, utilizing a few other AWS services and a MongoDB Atlas cluster.',
                     // "An API is called that automatically creates the captions for each video.", 
                     // "The content (captions & videos) is uploaded to an S3 bucket. The server syncs the data from the S3 bucket to a MongoDB cluster. User queries are executed from the server to the MongoDB database",
                     // "Content is stored in a S3 bucket, contains; many videos and their transcripts with timestamps.",
@@ -93,7 +93,7 @@ const descNode = [  "A website that allows the user to search for words & phases
                     `Additional AWS services: 
                     <ul> 
                         <li>CloudFront (CDN) </li> 
-                        <li>Certficate Manager (SSL/HTTPS)</li>
+                        <li>Certificate Manager (SSL/HTTPS)</li>
                         <li>Lambda </li>
                         <li>Route 53 </li>
                         <li>IAM </li>
@@ -108,8 +108,8 @@ const projNode = new Job("Name: Bski Captions", null, "https://sample.bski.one",
 
 
 const descMV = ['Browser extension for Firefox and Chrome', 
-                "Allows user to control volume, skip forward/back, and more with their mouse wheel; it solves the problem of frustately trying to point and click on videos with horrible UI and absurdly thin icons.",
-                "The extension adds Event Listeners to most videos elements, and then makes use of the video element's API",
+                "Allows users to control volume, skip forward/back, and more with their mouse wheel; it solves the problem of frustratingly trying to point and click on videos with horrible UI and absurdly thin icons.",
+                "The extension adds Event Listeners to most video elements, and then makes use of the video element's API.",
         ]
 const projMV = new Job("Name: Bski Control Video with Mouse", null, "Mozilla Addons: https://addons.mozilla.org/en-US/firefox/addon/bski-control-video-with-mouse", null, descMV)
 
@@ -121,7 +121,7 @@ const projMV = new Job("Name: Bski Control Video with Mouse", null, "Mozilla Add
 
 const descFiles =['Browser extension for Firefox only.', 
                 "This extension adds CSS and javascript on top of the default style that the browser already uses when viewing local files.", 
-                'Eg. Navigate to B:\\Users\\DrBrodski via the browser, extension renders differnt layout then the default.'
+                'Eg. Navigate to B:\\Users\\DrBrodski via the browser; extension renders different layout then the default.'
             ]
 const projFiles = new Job("Name: Local File Browsing", null, "Mozilla Addons: https://addons.mozilla.org/en-US/firefox/addon/better-local-file-viewer", null, descFiles)
 
@@ -131,7 +131,7 @@ const descResume =["This résumé is not a template off the internet, I coded it
                     "Made with NodeJS, EJS, and SASS / CSS. Hosted on AWS Lambda", 
                  
             ]
-const projResume = new Job("Name: Resume", null, "https://resume.bski.one/", null, descResume)
+const projResume = new Job("Name: Resume", null, "https://resume.bski.one", null, descResume)
 
 
 
