@@ -128,7 +128,7 @@ const projFiles = new Job("Name: Local File Browsing", null, "Mozilla Addons: ht
 
 
 const descResume =["This résumé is not a template off the internet, I coded it.",
-                    "Made with NodeJS, EJS, and SASS / CSS. Hosted on AWS Elastic Beanstalk", 
+                    "Made with NodeJS, EJS, and SASS / CSS. Hosted on AWS Lambda", 
                  
             ]
 const projResume = new Job("Name: Resume", null, "https://resume.bski.one/", null, descResume)

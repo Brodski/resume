@@ -1,0 +1,95 @@
+# For full config options, check the docs:
+#    docs.serverless.com
+
+# Production AWS:
+# $ serverless deploy 
+# Dev locally:
+# $ serverless offline start 
+
+# npm i serverless
+# npm i serverless-offline
+# npm install serverless-offline --save-dev
+# npm i serverless-http ????????
+
+# Cloudfront
+# 1 App: Needs Cloudfront to create a good domain name.
+# 2 Alternate domain name (CNAME) = cdn-sample-pbs-s3.bski.one
+# 3 Origin name = cdn-sample-pbs-s3.bski.one ( custom name of my CDN (optional))
+# 4 Origin domain = http://dpp03rzds6bsf.cloudfront.net/ ( the domain to cache)
+# 5 choose custom ssl cert
+# Route 53
+# 1 Record name = cdn-sample-pbs-s3.net
+# 2 Route Traffic to Alisas to Cloudfront Distribution
+# 3 alias = d155xk3d5pkswb.cloudfront.net
+# S3
+# DB: Needs S3 bucket and Cloudfront in front of it.
+# (recommened for style points) CNAME
+# 
+# Domain Name 
+# Via CloudFront, ontop of for Lambda
+# 1 Create CloudFront distribution
+# 1.1  Protocol - HTTPS
+# 2 Set CF origin. ex) b3j5az6dak.execute-api.us-east-1.amazonaws.com
+# 4 Set "Name" to your domain. ex) sample.bski.one
+# 5 Set "Alternate domain name (CNAME) - optional" to your domain. ex) sample.bski.one
+# 3 Go to Route53 Hosted zones - 
+# 4 Create record
+# 5 Route traffic to the cloudfront ^
+
+# Tutorial Serverless
+# https://hackernoon.com/a-crash-course-on-serverless-with-node-js-632b37d58b44#422a
+
+# Remove /stage/ from urls
+# https://stackoverflow.com/questions/46857335/how-to-remove-stage-from-urls-for-aws-lambda-functions-serverless-framework
+
+service: resume
+frameworkVersion: '3' # Serverless version
+
+# Environment variables: https://www.youtube.com/watch?v=1_sOPBgRAww
+# Load environment variables from .env files (default: false)
+# See https://www.serverless.com/framework/docs/environment-variables
+# useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  stage: devv
+  region: us-east-1
+  environment:
+    IS_LAMBDA: true
+    COOL_API_TEST: 12345_69 ;)
+
+functions:
+  hello:
+    handler: app.handler
+    events:
+      # - http:
+      - httpApi:
+          path: /
+          method: GET
+      - httpApi:
+          path: /{any+}
+          method: GET
+
+
+plugins:
+  - serverless-offline
+
+
+
+# This policy works
+# {
+#     "Version": "2012-10-17",
+#     "Statement": [
+#         {
+#             "Effect": "Allow",
+#             "Action": "*",
+#             "Resource": "*",
+#             "Condition": {
+#                 "IpAddress": {
+#                     "aws:SourceIp": "76.130.182.66/32"
+#                 }
+#             }
+#         }
+#     ]
+# }
