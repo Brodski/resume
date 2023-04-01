@@ -84,8 +84,8 @@ const projAndriod = new Job("Name: Brodski Minimalist Music Player With Swipe & 
 
 
 
-const descNode = [  "A website that allows the user to search for words & phases from a set of videos I have selected.",
-                    'Server runs NodeJS, deployed in AWS Lambda, utilizing a few other AWS services and a MongoDB Atlas cluster.',
+const descCaptions = [  "A website that allows the user to search for words & phases from a set of videos I have selected.",
+                    'Server runs NodeJS, deployed in AWS Lambda using Serverless Framework, utilizing a few other AWS services and a MongoDB Atlas cluster.',
                     // "An API is called that automatically creates the captions for each video.", 
                     // "The content (captions & videos) is uploaded to an S3 bucket. The server syncs the data from the S3 bucket to a MongoDB cluster. User queries are executed from the server to the MongoDB database",
                     // "Content is stored in a S3 bucket, contains; many videos and their transcripts with timestamps.",
@@ -100,7 +100,7 @@ const descNode = [  "A website that allows the user to search for words & phases
                     </ul>`,
                     
                 ]
-const projNode = new Job("Name: Bski Captions", null, "https://sample.bski.one", null, descNode)
+const projCaptions = new Job("Name: Bski Captions", null, "https://sample.bski.one", null, descCaptions)
 
 
 
@@ -140,6 +140,6 @@ const projResume = new Job("Name: Resume", null, "https://resume.bski.one", null
 
 
 const Jobs = [job1, job2]
-const Projects = [projNode, projVFO, projMV, projFiles, projAndriod, projResume ]
+const Projects = [projCaptions, projVFO, projMV, projFiles, projAndriod, projResume ]
 module.exports = { Jobs, Projects };
 
