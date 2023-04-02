@@ -23,6 +23,7 @@ const desc1 = [
             // "Update our CDN's behavior, AWS Cloudfront, for new and old pages",
             // 'Wrote jobs that used JCR API to crawl nodes and do content edits or maintenance on pages.',
             'Work with designers, marketing, SEO team, and the content team to reach business requirements.', 
+            'Provided guidance and support to new employees and interns, facilitating their success, onboarding and integration into the organization.',
             // "Improved the homepage's Lighthouse rating by 20-35 points in every category over the last year; performance, accessiblity, SEO, ect.",
             // 'Implemented tools to help test code and debug code in production or stage without redeploying, saving a couple of hours each time and reducing the risk of breaking anything during the process.'
         ]
