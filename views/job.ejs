@@ -1,17 +1,15 @@
 
 <div class="job">
-    <%= console.log('---------------------------------') %>
-    <%= console.log(job) %>
     <div class="job_item_heading">
         <div class="eyebrow_wrap">
             <h4 class="date"> <%= job?.start + (job?.end ? ' - ' + job.end : '') %> </h4>
-            <!-- <h5 class="company">  <%= (job?.company ? "at "+ job.company : "Personal project") %> </h5> -->
         </div>
         <h3>  <%= job?.title %> </h3>
-        <h5 class="company">  <%= (job?.company ? "at "+ job.company : "Personal project") %> </h5>
+        <h5 class="company">  <%- job.company %> </h5>
     </div>
     <ul class="secondary_listzzz">
         <% job?.descriptions.forEach( info => { %>
+            <%// console.log("INFO:", info); %>
             <li> <%- info %> </li>
         <% }) %>
     </ul> 

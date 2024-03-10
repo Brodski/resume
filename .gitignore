@@ -1,3 +1,13 @@
+.vscode/
+old-resumeproj/node_modules
+old-resumeproj/.vscode
+*.css.map
+.DS_Store
+*.zip
+
+
+
+
 # Logs
 logs
 *.log
@@ -128,10 +138,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
-
-.vscode/
-old-resumeproj/node_modules
-old-resumeproj/.vscode
-*.css.map
-.DS_Store

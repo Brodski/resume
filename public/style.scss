@@ -39,7 +39,9 @@
     --colorgrey: #e2e0df;
     --colorgold: #6f6116;
   }
-
+.llm_hidden {
+    color: #ffffff;
+} 
 body {
     background-color: grey;
     background-color: #eeecea;
@@ -58,6 +60,10 @@ body {
 
     // Barlow Semi Condensed > Saira Condensed >  Jost > Niramit >  Fira Sans Condensed      > Poppins (too big) > Fira > Cabin 
 }
+body{
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+  }
 h1,h2,h3,h4,h5,body,html,ul,p {
     margin: 0;
     padding: 0;
@@ -84,8 +90,31 @@ li {
     text-align: center;
     // color: var(--colorTextWhite);
     color: #ffffff;
-    h1 {
-        font-size: 50px;
+    .mini-wrap {
+        position: relative;
+        h1 {
+            font-size: 50px;
+        }
+        ul {
+            position: relative;
+            position: absolute;
+            top: 24px;
+            right: 10px;
+            color: var(--colorTextWhite);
+            color: white;
+            z-index: 11;
+            line-height: 22px;
+            font-size: 20px;
+            margin-top: -8px;
+        }
+        .name {
+            position: relative;
+            z-index: 10;
+            // padding: 20px 0;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            // background: linear-gradient(-4deg, black 51%, white 0%);
+        }
     }
     .skew_box {
         position: absolute;
@@ -96,34 +125,13 @@ li {
         height: 120%;
         height: 140%;
     }
-    .name {
-        position: relative;
-        z-index: 10;
-        // padding: 20px 0;
-        padding-bottom: 8px;
-        padding-top: 15px;
-        // background: linear-gradient(-4deg, black 51%, white 0%);
-    }
-    ul {
-        position: relative;
-        position: absolute;
-        top: 24px;
-        right: 10px;
-        color: var(--colorTextWhite);
-        color: white;
-        z-index: 11;
-        line-height: 22px;
-        font-size: 20px;
-        margin-top: -8px;
-
-    }
 
 }
 .bg-grow {
 
     // background-color: var(--colorgrey);
     background-color: #eeecea;
-    padding-top: 128px;
+    padding-top: 112px;
     margin-top: -100px;
     margin-left: -100vh;
     padding-left: 100vh;
@@ -168,16 +176,6 @@ li {
     // color: #6f6116;
     color: #6f6116;
     color: #000000;
-    &:after {
-        // content: "●"; 
-        // content: "◾"; // black
-        // content: "◦"; 
-        // content: "▪";  // white
-        // content: "◽";  
-        // content: "◇"; 
-        // content: "◆"; 
-        // margin-right: 4px;
-    }
 }
 .title1 li, .title2 li {
     font-size: 17px;
@@ -192,7 +190,8 @@ li {
     margin-left: 18px;
 
     .title_big {
-        margin: 18px 0;
+        margin-bottom: 12px;
+        margin-top: 6px;
         // padding-left: 8px;
         color: var(--colorgold);
         color: var(--colorTextWhite);
@@ -200,7 +199,8 @@ li {
         color: black;
         text-align: left;
         border: 0;
-        font-size: 46px;
+        font-size: 54px;
+        font-weight: bold;
         // line-height: 70px;
         // font-size: 70px;
     
@@ -212,21 +212,29 @@ li {
         margin-right: 12px;
 
         .job_item_heading {
-            padding: 4px 0;
+            margin-left: -6px;
+            padding-left: 10px;
+
+            padding-top: 4px;
+            padding-bottom: 4px;
             page-break-inside: avoid;
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
+            border-top: 2px solid #00000057;
+            border-bottom: 2px solid #00000057;
             letter-spacing: 1px;
             margin-bottom: 4px;
+
+            background: rgb(69,88,112);
+            background: linear-gradient(128deg, rgba(69,88,112,0.07305908203125) 0%, rgba(71,91,114,0.23552406802564774) 73%, rgba(67,85,106,0.3867845722273284) 100%);
+
             // border-radius: 3px;
             .company {
                 font-size: 18px;
                 line-height: 18px;
             }
             h3 {
-                font-weight: 800;  
-                font-size: 36px;
-                line-height: 40px;
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 38px;
                 letter-spacing: 1px;
     
             }
@@ -254,23 +262,30 @@ li {
             $margin-bullet: 8px;
             $margin-left-li: 24px;
             $text-indent: calc(-#{$margin-bullet} - 18px);
-            margin-bottom: 3px;
-            text-indent: -35px;
-            text-indent: $text-indent;
-            margin-left: 26px;
+
+            margin-bottom: 1px;
+            // text-indent: -35px;
+            // text-indent: $text-indent;
+            // margin-left: 26px;
+            margin-left: 14px;
+            padding-left: 8px;
             font-size: 23px;
-            &:before {
-                content: "x";
-                content: "●";
-                content: "◾"; // big black
-                content: "◦";
-                content: "▪"; // small white
-                content: "◽";
-                content: "◇";
-                content: "◆";
-                font-size: 15px;
-                margin-right: $margin-bullet;
+            list-style-type: "◆";
+            &::marker  {
+                font-size: 14px;
             }
+            // &:before {
+            //     content: "x";
+            //     content: "●";
+            //     content: "◾"; // big black
+            //     content: "◦";
+            //     content: "▪"; // small white
+            //     content: "◽";
+            //     content: "◇";
+            //     content: "◆";
+            //     font-size: 15px;
+            //     margin-right: $margin-bullet;
+            // }
 
         }
         > ul ul li {
@@ -290,6 +305,30 @@ li {
           
         }
     }
+}
+
+.projects {
+    .job {
+        margin-bottom: 16px;
+        &:first-of-type .job_item_heading {
+            // border-top: 2px solid black;
+        }
+        .job_item_heading h3 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .job_item_heading {
+            border-top: 1px solid #00000057;
+            border-bottom: 1px solid #00000057;
+            .company {
+                font-size: 16px; // 2px less than job's
+            }
+        }
+        li  {
+            font-size: 22px;
+        }
+    }
+
 }
 
 

@@ -1,268 +1,313 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Roboto:400,700');
- @page {
-	 margin: 0cm;
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Roboto:400,700");
+@page {
+  margin: 0cm;
 }
- h1, h2, h3, h4, h5 {
-	 page-break-after: avoid;
+h1, h2, h3, h4, h5 {
+  page-break-after: avoid;
 }
- body {
-	 page-break-after: always;
+
+body {
+  page-break-after: always;
 }
 
 .secondary_listzzz {
-	break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
 }
 
- @media print {
-	/* page-break-after works, as well */
-	 .pagebreak {
-		 page-break-before: always;
-		 height: 1px;
-	}
+@media print {
+  .pagebreak {
+    page-break-before: always;
+    height: 1px;
+  } /* page-break-after works, as well */
 }
- :root {
-	 --colorblue: #2a2e33;
-	 --colorTextWhite: #edf1f4;
-	 --colorgrey: #e2e0df;
-	 --colorgold: #6f6116;
+:root {
+  --colorblue: #2a2e33;
+  --colorTextWhite: #edf1f4;
+  --colorgrey: #e2e0df;
+  --colorgold: #6f6116;
 }
- body {
-	 background-color: grey;
-	 background-color: #eeecea;
-	 background-color: #fff;
-	 font-family: 'Cabin', sans-serif;
-	 font-family: 'Poppins', sans-serif;
-	 font-family: 'Fira Sans Condensed', sans-serif;
-	 font-family: 'Fira Sans', sans-serif;
-	 font-family: 'Oswald', sans-serif;
-	 font-family: 'Tiro Bangla', sans-serif;
-	 font-family: 'Niramit', sans-serif;
-	 font-family: 'Jost', sans-serif;
-	 font-family: 'Cairo', sans-serif;
-	 font-family: 'Saira Condensed', sans-serif;
-	 font-family: 'Barlow Semi Condensed', sans-serif;
+
+.llm_hidden {
+  color: #ffffff;
 }
- h1, h2, h3, h4, h5, body, html, ul, p {
-	 margin: 0;
-	 padding: 0;
+
+body {
+  background-color: grey;
+  background-color: #eeecea;
+  background-color: #ffffff;
+  font-family: "Cabin", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Tiro Bangla", sans-serif;
+  font-family: "Niramit", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-family: "Saira Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
- li {
-	 list-style: none;
+
+body {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
 }
- .container {
-	 width: 1200px;
-	 margin: 0 auto;
+
+h1, h2, h3, h4, h5, body, html, ul, p {
+  margin: 0;
+  padding: 0;
 }
- .row {
-	 display: grid;
-	 grid-template-columns: 280px minmax(0, 1fr);
+
+li {
+  list-style: none;
 }
- .heading {
-	 position: relative;
-	 text-align: center;
-	 color: #fff;
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
- .heading h1 {
-	 font-size: 50px;
+
+.row {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
 }
- .heading .skew_box {
-	 position: absolute;
-	 background-color: var(--colorblue);
-	 clip-path: polygon(102% 0%, 0 74%, 100% 100%);
-	 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
-	 width: 100%;
-	 height: 120%;
-	 height: 140%;
+
+.heading {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
 }
- .heading .name {
-	 position: relative;
-	 z-index: 10;
-	 padding-bottom: 8px;
-	 padding-top: 15px;
+.heading .mini-wrap {
+  position: relative;
 }
- .heading ul {
-	 position: relative;
-	 position: absolute;
-	 top: 24px;
-	 right: 10px;
-	 color: var(--colorTextWhite);
-	 color: white;
-	 z-index: 11;
-	 line-height: 22px;
-	 font-size: 20px;
-	 margin-top: -8px;
+.heading .mini-wrap h1 {
+  font-size: 50px;
 }
- .bg-grow {
-	 background-color: #eeecea;
-	 padding-top: 128px;
-	 margin-top: -100px;
-	 margin-left: -100vh;
-	 padding-left: 100vh;
+.heading .mini-wrap ul {
+  position: relative;
+  position: absolute;
+  top: 24px;
+  right: 10px;
+  color: var(--colorTextWhite);
+  color: white;
+  z-index: 11;
+  line-height: 22px;
+  font-size: 20px;
+  margin-top: -8px;
 }
- .secondary_list {
-	 position: relative;
-	 padding-right: 10px;
-	 margin-right: 10px;
+.heading .mini-wrap .name {
+  position: relative;
+  z-index: 10;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
- .secondary_list::after {
-	 right: 0;
-	 top: 6px;
-	 width: 3px;
-	 height: calc(100% - 6px - 8px);
-	 background: #85857e;
-	 content: "";
-	 position: absolute;
-	 background: #85857e;
+.heading .skew_box {
+  position: absolute;
+  background-color: var(--colorblue);
+  -webkit-clip-path: polygon(102% 0%, 0 74%, 100% 100%);
+          clip-path: polygon(102% 0%, 0 74%, 100% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
+  width: 100%;
+  height: 120%;
+  height: 140%;
 }
- .title1 {
-	 background-color: #3f3f27 cc;
-	 background-color: #2a2e33;
-	 border-top-left-radius: 6px;
-	 border-top-right-radius: 6px;
-	 font-size: 24px;
-	 color: #edf1f4;
-	 background: linear-gradient(90deg, rgba(42, 46, 51, 0) 0%, rgba(42, 46, 51, 1) 72%, rgba(42, 46, 51, 1) 100%);
+
+.bg-grow {
+  background-color: #eeecea;
+  padding-top: 112px;
+  margin-top: -100px;
+  margin-left: -100vh;
+  padding-left: 100vh;
 }
- .title2 {
-	 font-size: 12px;
-	 font-size: 16px;
-	 padding-top: 3px;
-	 font-weight: 600;
-	 font-style: italic;
-	 color: #f5ef9c;
-	 color: #6f6116;
-	 color: #000;
+
+.secondary_list {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
 }
- .title1 li, .title2 li {
-	 font-size: 17px;
-	 font-weight: normal;
+.secondary_list::after {
+  right: 0;
+  top: 6px;
+  width: 3px;
+  height: calc(100% - 6px - 8px);
+  background: #85857e;
+  content: "";
+  position: absolute;
+  background: #85857e;
 }
- .title_big {
-	 letter-spacing: 4px;
+
+.title1 {
+  background-color: rgba(63, 63, 39, 0.8);
+  background-color: #2a2e33;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-size: 24px;
+  color: #edf1f4;
+  background: linear-gradient(90deg, rgba(42, 46, 51, 0) 0%, rgb(42, 46, 51) 72%, rgb(42, 46, 51) 100%);
 }
- .work {
-	 margin-left: 18px;
+
+.title2 {
+  font-size: 12px;
+  font-size: 16px;
+  padding-top: 3px;
+  font-weight: 600;
+  font-style: italic;
+  color: #f5ef9c;
+  color: #6f6116;
+  color: #000000;
 }
- .work .title_big {
-	 margin: 18px 0;
-	 color: var(--colorgold);
-	 color: var(--colorTextWhite);
-	 color: var(--colorblue);
-	 color: black;
-	 text-align: left;
-	 border: 0;
-	 font-size: 46px;
+
+.title1 li, .title2 li {
+  font-size: 17px;
+  font-weight: normal;
 }
- .work .job {
-	 margin-top: 0px;
-	 margin-bottom: 32px;
-	 margin-right: 12px;
+
+.title_big {
+  letter-spacing: 4px;
 }
- .work .job .job_item_heading {
-	 padding: 4px 0;
-	 page-break-inside: avoid;
-	 border-top: 2px solid black;
-	 border-bottom: 2px solid black;
-	 letter-spacing: 1px;
-	 margin-bottom: 4px;
+
+.work {
+  margin-left: 18px;
 }
- .work .job .job_item_heading .company {
-	 font-size: 18px;
-	 line-height: 18px;
+.work .title_big {
+  margin-bottom: 12px;
+  margin-top: 6px;
+  color: var(--colorgold);
+  color: var(--colorTextWhite);
+  color: var(--colorblue);
+  color: black;
+  text-align: left;
+  border: 0;
+  font-size: 54px;
+  font-weight: bold;
 }
- .work .job .job_item_heading h3 {
-	 font-weight: 800;
-	 font-size: 36px;
-	 line-height: 40px;
-	 letter-spacing: 1px;
+.work .job {
+  margin-top: 0px;
+  margin-bottom: 32px;
+  margin-right: 12px;
 }
- .work .job .date {
-	 color: black;
-	 font-size: 18px;
-	 line-height: 19px;
+.work .job .job_item_heading {
+  margin-left: -6px;
+  padding-left: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  page-break-inside: avoid;
+  border-top: 2px solid rgba(0, 0, 0, 0.3411764706);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3411764706);
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  background: rgb(69, 88, 112);
+  background: linear-gradient(128deg, rgba(69, 88, 112, 0.073059082) 0%, rgba(71, 91, 114, 0.235524068) 73%, rgba(67, 85, 106, 0.3867845722) 100%);
 }
- .work .job .eyebrow_wrap {
-	 display: flex;
-	 justify-content: space-between;
+.work .job .job_item_heading .company {
+  font-size: 18px;
+  line-height: 18px;
 }
- .work .job .eyebrow_wrap .company {
-	 line-height: 30px;
-	 padding-bottom: 4px;
-	 line-height: 18px;
+.work .job .job_item_heading h3 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 1px;
 }
- .work .job li {
-	 margin-bottom: 3px;
-	 text-indent: -35px;
-	 text-indent: calc(-8px - 18px);
-	 margin-left: 26px;
-	 font-size: 23px;
+.work .job .date {
+  color: black;
+  font-size: 18px;
+  line-height: 19px;
 }
- .work .job li:before {
-	 content: "x";
-	 content: "●";
-	 content: "◾";
-	 content: "◦";
-	 content: "▪";
-	 content: "◽";
-	 content: "◇";
-	 content: "◆";
-	 font-size: 15px;
-	 margin-right: 8px;
+.work .job .eyebrow_wrap {
+  display: flex;
+  justify-content: space-between;
 }
- .work .job > ul ul li {
-	 font-size: 20px;
+.work .job .eyebrow_wrap .company {
+  line-height: 30px;
+  padding-bottom: 4px;
+  line-height: 18px;
 }
- .work .job > ul ul li:before {
-	 content: "x";
-	 content: "●";
-	 content: "◾";
-	 content: "◦";
-	 content: "▪";
-	 content: "◽";
-	 content: "◇";
+.work .job li {
+  margin-bottom: 1px;
+  margin-left: 14px;
+  padding-left: 8px;
+  font-size: 23px;
+  list-style-type: "◆";
 }
- .list_skills {
-	 text-align: right;
-	 padding-right: 10px;
+.work .job li::marker {
+  font-size: 14px;
 }
- .list_skills p, .list_skills li {
-	 margin: 0;
-	 font-size: 18px;
+.work .job > ul ul li {
+  font-size: 20px;
 }
- .list_skills ul, .list_skills li {
-	 position: relative;
+.work .job > ul ul li:before {
+  content: "x";
+  content: "●";
+  content: "◾";
+  content: "◦";
+  content: "▪";
+  content: "◽";
+  content: "◇";
 }
- .list_skills .title_big {
-	 margin: 14px 0;
-	 border-top: 2px solid var(--colorgold);
-	 border-bottom: 2px solid var(--colorgold);
+
+.projects .job {
+  margin-bottom: 16px;
 }
- .list_skills .education h3 {
-	 font-size: 27px;
+.projects .job .job_item_heading h3 {
+  font-size: 24px;
+  line-height: 30px;
 }
- .list_skills .education p {
-	 color: black;
-	 font-size: 19px;
+.projects .job .job_item_heading {
+  border-top: 1px solid rgba(0, 0, 0, 0.3411764706);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3411764706);
 }
- .list_skills .sub_skill {
-	 position: relative;
-	 margin: 8px 0px;
-	 page-break-after: avoid;
-	 page-break-inside: avoid;
-	 color: #fefff9;
-	 background-color: #3f3f27 cc;
-	 background-color: transparent;
-	 border-radius: 6px;
-	 margin-right: -3px;
-	 color: #2a2e33;
-	 color: black;
+.projects .job .job_item_heading .company {
+  font-size: 16px;
 }
- .list_skills .sub_skill > * {
-	 padding-right: 10px;
+.projects .job li {
+  font-size: 22px;
 }
- .h_divider1 {
-	 border-bottom: 2px solid black;
-	 margin: 0 100px;
+
+.list_skills {
+  text-align: right;
+  padding-right: 10px;
 }
- 
+.list_skills p, .list_skills li {
+  margin: 0;
+  font-size: 18px;
+}
+.list_skills ul, .list_skills li {
+  position: relative;
+}
+.list_skills .title_big {
+  margin: 14px 0;
+  border-top: 2px solid var(--colorgold);
+  border-bottom: 2px solid var(--colorgold);
+}
+.list_skills .education h3 {
+  font-size: 27px;
+}
+.list_skills .education p {
+  color: black;
+  font-size: 19px;
+}
+.list_skills .sub_skill {
+  position: relative;
+  margin: 8px 0px;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  color: #fefff9;
+  background-color: rgba(63, 63, 39, 0.8);
+  background-color: transparent;
+  border-radius: 6px;
+  margin-right: -3px;
+  color: #2a2e33;
+  color: black;
+}
+.list_skills .sub_skill > * {
+  padding-right: 10px;
+}
+
+.h_divider1 {
+  border-bottom: 2px solid black;
+  margin: 0 100px;
+}/*# sourceMappingURL=style.css.map */
