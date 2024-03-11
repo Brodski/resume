@@ -1,3 +1,7 @@
+
+const fs = require('fs');
+const path = require('path');
+
 const express = require('express');
 const app = express();
 const serverless = require('serverless-http');
@@ -10,8 +14,8 @@ app.set('views', './views')
 app.use(express.static(__dirname + '/public'))
 
 const {Jobs, Projects} = require("./resumeData");
-const {Jobs2, Projects2} = require("./resumeData_2");
-const {Jobs_chatgpt, Projects_chatgpt} = require("./resumeData_chatgpt");
+const {Jobs2, Projects2} = require("./resumeData2");
+const {Jobs_chatgpt, Projects_chatgpt} = require("./resumeDataChatgpt");
 
 app.get('/', function(req, res) {
     console.log('sending homepage')
@@ -27,6 +31,9 @@ app.get('/3', function(req, res) {
 })
 
 
+// Create the serverless handler outside of the main handler function
+const serverlessHandler = serverless(app);
+
 console.log("=========================")
 if (!process.env.IS_LAMBDA) {
     app.listen((process.env.PORT ?? 3000 ), function() {
@@ -34,6 +41,23 @@ if (!process.env.IS_LAMBDA) {
     })
 }  else {
     console.log("process.env.IS_LAMBDA" , process.env.IS_LAMBDA)
-    module.exports.handler = serverless(app);
+    module.exports.handler = async (event, context) => {
+        console.log("event.path", event.path)
+        if (event.path.startsWith('/favicon.ico')) {
+            const imagePath = path.join(__dirname, 'public/favicon.ico');
+            const imageBytes = fs.readFileSync(imagePath);
+            const base64Image = imageBytes.toString('base64');
+            return {
+                statusCode: 200,
+                headers: {
+                  'Content-Type': 'image/x-icon',
+                },
+                body: base64Image,
+                isBase64Encoded: true,
+            };
+        } else {
+            return serverlessHandler(event, context); 
+        }
+    };
+    // module.exports.handler = serverless(app);
 }
-console.log("=========================")
