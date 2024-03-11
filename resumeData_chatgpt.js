@@ -125,7 +125,7 @@ const projGit = new Job(
 
 
 
-const Jobs2 = [jobPing, jobCharter]
-const Projects2 = [projAndriod, projVFO,  projMV, projGit ]
-module.exports = { Jobs2, Projects2 };
+const Jobs_chatgpt = [jobPing, jobCharter]
+const Projects_chatgpt = [projAndriod, projVFO,  projMV, projGit ]
+module.exports = { Jobs_chatgpt, Projects_chatgpt };
 
