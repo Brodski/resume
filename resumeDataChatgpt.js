@@ -42,7 +42,7 @@ const descCharter  = [
                     leveraging Linux VMs on our cloud computing virtualization platform, VSphere, on a daily basis ",
                 'Contributed to the development of a Flask/Python-based proxy server to streamline traffic \
                     and facilitate data retrieval from a MongoDB database.',
-                "Developed a Python-based testing tool for quality assurance of a DHCP server cluster, utilizing \
+                "Developed a Python-based testing tool for quality assurance on a DHCP server cluster, utilizing \
                     the hypervisor's API for precise control over both worker and master virtual machines during stress testing.",
                 "Deployed docker apps, running Telegraf, to gather metrics from the VMs running the DHCP servers. \
                     It channeled data into our Splunk server for real-time data analysis. I also created a dashboard to visualize and examine the data.",
@@ -68,7 +68,7 @@ const projAndriod = new Job(
     null, 
     [
         "Android Native app written in Kotlin. The app plays local files from the user's phone.",
-        "Mostly a learning exercise but this app is unique to other apps because I masterfully implement gestures to create the perfect user experience.",
+        "This app is unique to other apps because I masterfully implement gestures to create the perfect user experience.",
     ]
 )
 

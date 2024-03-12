@@ -16,10 +16,10 @@ const descPing = [
         publish and modify web content on the company's main website. Well-versed with the technologies for \
         constructing and maintaining a robust, scalable web presence at: \
         <a target='_blank' href='https://www.pingidentity.com' rel='noopener'> www.pingidentity.com. </a>",
-    `Cloud computing work: Independently built AWS Lambda Functions, AWS Api Gateways, CloudWatch services, 
-        the accompanying GitLab-CI pipeline, and updated our Cloudfront CDN, in an effort to migrate \
-        endpoints from our CMS to AWS. I held responsibility for the architecture, pipeline, IaC tool, and built \
-        it all from start to finish.`,
+    `Cloud computing work: Independently built AWS Lambda Functions, AWS Api Gateways, CloudWatch services,\
+        and updated our Cloudfront CDN, along with an accompanying GitLab-CI pipeline, in an effort to \
+        migrate endpoints from our CMS to AWS. I held responsibility for the architecture, pipeline, IaC \
+        tool, and built it all from start to finish.`,
     `Wrote the Terraform configurations for the services and wrote the NodeJS code of the Lambda Functions for \
         the migrated endpoint. There have not been any records of them failing since they were built. These \
         endpoints are vital and cannot fail.`,
@@ -47,7 +47,7 @@ const descCharter  = [
         files, view, filter, and analyze logs for troubleshooting and performance monitoring.",
     'Developed a Flask/Python-based proxy server to streamline traffic and facilitate data \
         retrieval from a MongoDB database.',
-    "Wrote a Python-based testing tool for quality assurance of a DHCP server cluster, utilizing the \
+    "Wrote a Python-based testing tool for quality assurance on a DHCP server cluster, utilizing the \
         hypervisor's API for precise control over both worker and master virtual machines during stress testing.",
     "Deployed docker apps, running Telegraf, to gather metrics from the VMs running the DHCP servers. It streamed \
         data into our Splunk server for real-time data analysis. I also created a Splunk dashboard to visualize and examine the data.",
@@ -73,7 +73,7 @@ const projAndriod = new Job(
     null, 
     [
         "Android Native app written in Kotlin. The app plays local files from the user's phone.",
-        "Mostly a learning exercise but this app is unique to other apps because I masterfully implement gestures to create the perfect user experience.",
+        "This app is unique to other apps because I masterfully implement gestures to create the perfect user experience.",
     ]
 )
 

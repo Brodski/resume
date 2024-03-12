@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 const path = require('path');
 
@@ -12,15 +11,29 @@ require("dotenv").config();
 app.set('view engine', 'ejs')
 app.set('views', './views') 
 app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/markdown'))
 
 const {Jobs, Projects} = require("./resumeData");
 const {Jobs2, Projects2} = require("./resumeData2");
 const {Jobs_chatgpt, Projects_chatgpt} = require("./resumeDataChatgpt");
 
+//////////////////////////
+//    REAL ENDPOINTS    //
+//////////////////////////
 app.get('/', function(req, res) {
     console.log('sending homepage')
     res.render('index', { jobs: Jobs, projects: Projects })
 })
+
+app.get('/markdown', function(req, res) {
+    console.log('sending markdown')
+    res.sendFile(__dirname + '/markdown/markdown.html');
+})
+
+
+//////////////////////////
+// ALT TESTING VERSIONS //
+//////////////////////////
 app.get('/2', function(req, res) {
     console.log('sending /2')
     res.render('index', { jobs: Jobs2, projects: Projects2 })
@@ -31,10 +44,13 @@ app.get('/3', function(req, res) {
 })
 
 
+//////////////////////////
+//    BEGIN SERVER      //
+//////////////////////////
+
 // Create the serverless handler outside of the main handler function
 const serverlessHandler = serverless(app);
 
-console.log("=========================")
 if (!process.env.IS_LAMBDA) {
     app.listen((process.env.PORT ?? 3000 ), function() {
         console.log("STARTING: " + (process.env.PORT ?? 3000))

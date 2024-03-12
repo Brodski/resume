@@ -1,10 +1,8 @@
----
-
-**Christopher Brodski**
+## Christopher Brodski
 - Email: cbrodski@gmail.com
 - Location: Denver, CO
 - GitHub: [github.com/Brodski](https://github.com/Brodski)
-- Resume (fancy): [resume.bski.one](resume.bski.one)
+- Resume (fancy): [resume.bski.one](https://resume.bski.one)
 
 ---
 
@@ -50,7 +48,7 @@
 - **Java Web Developer**, Ping Identity
 *Sept 2020 - Present*
   - Use Adobe's content management system, AEM, to provide the structure for team members to quickly design, publish and modify web content on the company's main website. Well-versed with the technologies for constructing and maintaining a robust, scalable web presence at: www.pingidentity.com.
-  - Cloud computing work: Independently built AWS Lambda Functions, AWS Api Gateways, CloudWatch services, and updated our Cloudfront CDN, along with the accompanying GitLab-CI pipeline, in an effort to migrate endpoints from our CMS to AWS. I held responsibility for the architecture, pipeline, IaC tool, and built it all from start to finish.
+  - Cloud computing work: Independently built AWS Lambda Functions, AWS Api Gateways, CloudWatch services, and updated our Cloudfront CDN, along with an accompanying GitLab-CI pipeline, in an effort to migrate endpoints from our CMS to AWS. I held responsibility for the architecture, pipeline, IaC tool, and built it all from start to finish.
   - Wrote the Terraform configurations for the services and wrote the NodeJS code of the Lambda Functions for the migrated endpoint. There have not been any records of them failing since they were built. These endpoints are vital and cannot fail.
   - Backend work: built APIs using Java servlets for client-side and server-side rendering, ensuring seamless interaction and data exchange. Automated jobs for content crawling, edits, and general page maintenance. Experienced with thread management for asynchronous operations.
   - Frontend work: built web components for content and design teams, enabling static and dynamic page functionalities across the website. Advanced in JavaScript, HTML, and CSS.
@@ -63,7 +61,7 @@
   - Part of a DevOps/SRE team, contributing to deployment processes and quality assurance.
   - Routinely accessed virtual machines (VMs) via SSH to execute and develop various scripts. Used command-line tools to navigate the internal file system of the VMs to locate log files, view, filter, and analyze logs for troubleshooting and performance monitoring.
   - Developed a Flask/Python-based proxy server to streamline traffic and facilitate data retrieval from a MongoDB database.
-  - Wrote a Python-based testing tool for quality assurance of a DHCP server cluster, utilizing the hypervisor's API for precise control over both worker and master virtual machines during stress testing.
+  - Wrote a Python-based testing tool for quality assurance on a DHCP server cluster, utilizing the hypervisor's API for precise control over both worker and master virtual machines during stress testing.
   - Deployed docker apps, running Telegraf, to gather metrics from the VMs running the DHCP servers. It streamed data into our Splunk server for real-time data analysis. I also created a Splunk dashboard to visualize and examine the data.
   - Helped build a new test environment for an existing project in AWS by redeploying that project at a scaled-down cluster size. This involved researching company documents and working with the team that managed that project; editing configuration files like Terraform, then executing the deployment.
 ---
@@ -72,7 +70,7 @@
 
 - **Brodski Minimalist Music Player With Swipe & Touch**
   - Android Native app written in Kotlin. The app plays local files from the user's phone, available on Google Play Store.
-  - Mostly a learning exercise but this app is unique to other apps because I masterfully implement gestures to create the perfect user experience.
+  - This app is unique to other apps because I masterfully implement gestures to create the perfect user experience.
   - [Google Play Store Link](https://play.google.com/store/apps/details?id=com.bskimusicplayer.mediaplayer)
 
 - **Video Feed Organizer (VFO)**
