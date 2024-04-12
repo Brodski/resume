@@ -25,10 +25,16 @@ app.get('/', function(req, res) {
     res.render('index', { jobs: Jobs, projects: Projects })
 })
 
+// app.get('/markdown', function(req, res) {
+//     console.log('sending markdown')
+//     res.sendFile(__dirname + '/markdown/markdown.html');
+// })
+
 app.get('/markdown', function(req, res) {
     console.log('sending markdown')
-    res.sendFile(__dirname + '/markdown/markdown.html');
+    res.render('markdown/markdown.ejs', { })
 })
+
 
 
 //////////////////////////

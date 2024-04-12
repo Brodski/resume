@@ -63,7 +63,8 @@ const jobCharter = new Job("Platform Infrastructure Integration / Automation Eng
 // #######################################################
 const projAndriod = new Job(
     "Name: Brodski Minimalist Music Player With Swipe & Touch", 
-    "Personal project - Google Play Store: <a href='play.google.com/store/apps/details?id=com.bskimusicplayer.mediaplayer'> play.google.com/store/apps/details?id=com.bskimusicplayer.mediaplayer </a>", 
+    // "Personal project - Google Play Store: <a href='play.google.com/store/apps/details?id=com.bskimusicplayer.mediaplayer'> play.google.com/store/apps/details?id=com.bskimusicplayer.mediaplayer </a>", 
+    "Personal project - Google Play Store: play.google.com/store/apps/details?id=com.bskimusicplayer.mediaplayer", 
     "", 
     null, 
     [

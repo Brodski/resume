@@ -1,8 +1,13 @@
+
+<!-- https://dillinger.io/  -->
+<!-- https://dillinger.io/  -->
+<!-- https://dillinger.io/  -->
+
 ## Christopher Brodski
 - Email: cbrodski@gmail.com
 - Location: Denver, CO
 - GitHub: [github.com/Brodski](https://github.com/Brodski)
-- Resume (fancy): [resume.bski.one](https://resume.bski.one)
+- Resume *(fancy)*: [resume.bski.one](https://resume.bski.one)
 
 ---
 
@@ -71,7 +76,8 @@
 - **Brodski Minimalist Music Player With Swipe & Touch**
   - Android Native app written in Kotlin. The app plays local files from the user's phone, available on Google Play Store.
   - This app is unique to other apps because I masterfully implement gestures to create the perfect user experience.
-  - [Google Play Store Link](https://play.google.com/store/apps/details?id=com.bskimusicplayer.mediaplayer)
+  <!-- - ~~[Google Play Store Link](https://play.google.com/store/apps/details?id=com.bskimusicplayer.mediaplayer)~~  -->
+  - [Github](https://github.com/Brodski/MediaPlayer#overview) 
 
 - **Video Feed Organizer (VFO)**
   - Single-page web application that communicates to Youtube's REST API for profile customization.
