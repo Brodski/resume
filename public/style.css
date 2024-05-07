@@ -63,7 +63,11 @@ h1, h2, h3, h4, h5, body, html, ul, p {
 li {
   list-style: none;
 }
-
+@media print {
+.container {
+  width: 1200px;
+}
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -114,20 +118,22 @@ li {
   }
 }
 
-  @media (min-width: 700px) {
-    .heading .mini-wrap ul {
-      position: relative;
-      position: absolute;
-      top: 24px;
-      right: 10px;
-      color: var(--colorTextWhite);
-      color: white;
-      z-index: 11;
-      line-height: 22px;
-      font-size: 20px;
-      margin-top: -8px;
-    }
+
+
+@media (min-width: 700px) {
+  .heading .mini-wrap ul {
+    position: relative;
+    position: absolute;
+    top: 24px;
+    right: 10px;
+    color: var(--colorTextWhite);
+    color: white;
+    z-index: 11;
+    line-height: 22px;
+    font-size: 20px;
+    margin-top: -8px;
   }
+}
 .bg-grow {
   background-color: #eeecea;
   padding-top: 112px;
