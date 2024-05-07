@@ -65,7 +65,7 @@ li {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -85,36 +85,49 @@ li {
 .heading .mini-wrap h1 {
   font-size: 50px;
 }
-.heading .mini-wrap ul {
-  position: relative;
-  position: absolute;
-  top: 24px;
-  right: 10px;
-  color: var(--colorTextWhite);
-  color: white;
-  z-index: 11;
-  line-height: 22px;
-  font-size: 20px;
-  margin-top: -8px;
-}
 .heading .mini-wrap .name {
   position: relative;
   z-index: 10;
   padding-bottom: 8px;
   padding-top: 8px;
 }
-.heading .skew_box {
-  position: absolute;
-  background-color: var(--colorblue);
-  -webkit-clip-path: polygon(102% 0%, 0 74%, 100% 100%);
-          clip-path: polygon(102% 0%, 0 74%, 100% 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
-  width: 100%;
-  height: 120%;
-  height: 140%;
+@media (min-width: 700px) {
+  .heading .skew_box {
+    position: absolute;
+    background-color: var(--colorblue);
+    -webkit-clip-path: polygon(102% 0%, 0 74%, 100% 100%);
+            clip-path: polygon(102% 0%, 0 74%, 100% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
+    width: 100%;
+    height: 120%;
+    height: 140%;
+  }
 }
 
+@media (max-width: 699px) { 
+  .heading .skew_box  {
+    position: absolute;
+    background-color: var(--colorblue);
+    width: 100%;
+    height: 105%;
+  }
+}
+
+  @media (min-width: 700px) {
+    .heading .mini-wrap ul {
+      position: relative;
+      position: absolute;
+      top: 24px;
+      right: 10px;
+      color: var(--colorTextWhite);
+      color: white;
+      z-index: 11;
+      line-height: 22px;
+      font-size: 20px;
+      margin-top: -8px;
+    }
+  }
 .bg-grow {
   background-color: #eeecea;
   padding-top: 112px;

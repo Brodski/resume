@@ -80,6 +80,21 @@ const projAndriod = new Job(
 
 
 // #######################################################
+// ################        SCRAPER     ####################
+// #######################################################
+const descScraper =["Transcribes about 100 hours of videos to text daily.",
+    "Uses <a href='https://github.com/Vaibhavs10/insanely-fast-whisper'> Insanely Fast Whisper </a>, an ultra fast version of <a href='https://github.com/openai/whisper'> OpenAI's Whisper </a>.",
+    "Runs docker images daily in AWS. Primarily uses ECS, ECR, Lambda, the cheap GPU cloud provider vast.ai, and managed with Terraform. Written in Python and some NodeJS."]
+const projScraper = new Job(
+    "Name: Transcriber app", 
+    "Personal project - <a href='https://github.com/Brodski/scraper-dl-vids'> Github</a>", 
+    "", 
+    null, 
+    descScraper
+)
+
+
+// #######################################################
 // ###############        VFO        #####################
 // #######################################################
 const projVFO = new Job(
@@ -112,11 +127,10 @@ const projMV = new Job(
     ]
 )
 
-
 // #######################################################
 // ################        RESUME     ####################
 // #######################################################
-const descResume =["This résumé is made with NodeJS, EJS, and SASS / CSS. Hosted on AWS Lambda",]
+const descResume =["This résumé is made with NodeJS & EJS. Hosted on AWS Lambda.",]
 const projResume = new Job(
     "Name: Resume", 
     "<a href='https://resume.bski.one'> https://resume.bski.one </a>", 
@@ -143,6 +157,6 @@ const projGit = new Job(
 
 
 const Jobs = [jobPing, jobCharter]
-const Projects = [projAndriod, projMV, projVFO, projResume, projGit ]
+const Projects = [projAndriod, projScraper, projVFO, projMV, projResume, projGit ]
 module.exports = { Jobs, Projects };
 

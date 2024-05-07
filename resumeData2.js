@@ -187,7 +187,7 @@ const projMV = new Job(
 // #######################################################
 // ################        GITHUB     ####################
 // #######################################################
-const descResume =["This résumé is made with NodeJS, EJS, and SASS / CSS. Hosted on AWS Lambda",]
+const descResume =["This résumé is made with NodeJS, EJS, and SASS / CSS. Hosted on AWS Lambda.",]
 const projResume = new Job("Name: Resume", "https://resume.bski.one", "", null, descResume)
 
 // const descGit =["More projects. Some unfinished. Some unimpressive.",]

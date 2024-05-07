@@ -73,11 +73,17 @@
 
 **PROJECTS**
 
+- **Transcriber app**
+  - Transcribes about 100 hours of videos to text daily.
+  - Uses [Insanely Fast Whisper](https://github.com/Vaibhavs10/insanely-fast-whisper), an ultra fast version of [OpenAI's Whisper](https://github.com/openai/whisper).
+  - Runs docker images daily in AWS. Primarily uses ECS, ECR, Lambda, the cheap GPU cloud provider vast.ai, and managed with Terraform. Written in Python and some NodeJS.
+  - [Github repo](https://github.com/Brodski/scraper-dl-vids) 
+
 - **Brodski Minimalist Music Player With Swipe & Touch**
   - Android Native app written in Kotlin. The app plays local files from the user's phone, available on Google Play Store.
   - This app is unique to other apps because I masterfully implement gestures to create the perfect user experience.
   <!-- - ~~[Google Play Store Link](https://play.google.com/store/apps/details?id=com.bskimusicplayer.mediaplayer)~~  -->
-  - [Github](https://github.com/Brodski/MediaPlayer#overview) 
+  - [Github repo](https://github.com/Brodski/MediaPlayer#overview) 
 
 - **Video Feed Organizer (VFO)**
   - Single-page web application that communicates to Youtube's REST API for profile customization.
