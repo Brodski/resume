@@ -33,7 +33,7 @@ const descPing = [
         business objectives.', 
     'Provided guidance and support to new employees and interns, facilitating their success, onboarding and integration into the organization.',
 ]
-const jobPing = new Job("Java Web Developer", "at Ping Identity", "Sept 2020", "Present", descPing)
+const jobPing = new Job("Java Web Developer", "at Ping Identity", "Sept 2020", "June 2024", descPing)
 
 
 

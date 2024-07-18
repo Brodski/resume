@@ -63,19 +63,10 @@ h1, h2, h3, h4, h5, body, html, ul, p {
 li {
   list-style: none;
 }
-@media print {
+
 .container {
   width: 1200px;
-}
-}
-.container {
-  max-width: 1200px;
   margin: 0 auto;
-}
-
-.row {
-  display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
 }
 
 .heading {
@@ -89,51 +80,34 @@ li {
 .heading .mini-wrap h1 {
   font-size: 50px;
 }
+.heading .mini-wrap ul {
+  top: 24px;
+  right: 10px;
+  color: var(--colorTextWhite);
+  color: white;
+  z-index: 11;
+  line-height: 22px;
+  font-size: 20px;
+  margin-top: -8px;
+}
 .heading .mini-wrap .name {
   position: relative;
   z-index: 10;
   padding-bottom: 8px;
   padding-top: 8px;
 }
-@media (min-width: 700px) {
-  .heading .skew_box {
-    position: absolute;
-    background-color: var(--colorblue);
-    -webkit-clip-path: polygon(102% 0%, 0 74%, 100% 100%);
-            clip-path: polygon(102% 0%, 0 74%, 100% 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
-    width: 100%;
-    height: 120%;
-    height: 140%;
-  }
+.heading .skew_box {
+  position: absolute;
+  background-color: var(--colorblue);
+  -webkit-clip-path: polygon(102% 0%, 0 74%, 100% 100%);
+          clip-path: polygon(102% 0%, 0 74%, 100% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
+  width: 100%;
+  height: 120%;
+  height: 140%;
 }
 
-@media (max-width: 699px) { 
-  .heading .skew_box  {
-    position: absolute;
-    background-color: var(--colorblue);
-    width: 100%;
-    height: 105%;
-  }
-}
-
-
-
-@media (min-width: 700px) {
-  .heading .mini-wrap ul {
-    position: relative;
-    position: absolute;
-    top: 24px;
-    right: 10px;
-    color: var(--colorTextWhite);
-    color: white;
-    z-index: 11;
-    line-height: 22px;
-    font-size: 20px;
-    margin-top: -8px;
-  }
-}
 .bg-grow {
   background-color: #eeecea;
   padding-top: 112px;
@@ -142,6 +116,46 @@ li {
   padding-left: 100vh;
 }
 
+@media (max-width: 599px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media (min-width: 600px) {
+  .heading .mini-wrap ul {
+    position: absolute;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+  }
+}
+@media (max-width: 599px) {
+  .row {
+    width: 100%;
+  }
+  .bg-grow {
+    padding-top: 145px;
+  }
+  .heading .mini-wrap ul {
+    position: relative;
+    text-align: right;
+  }
+  .heading .skew_box {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 78%);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 78%);
+  }
+}
 .secondary_list {
   position: relative;
   padding-right: 10px;

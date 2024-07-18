@@ -20,6 +20,13 @@
   - University of Colorado Denver
 
 ---
+  
+**CERTIFICATES**
+
+- **AWS Certified Cloud Practitioner**
+  - Acquired: July 2024
+
+---
 
 **SKILLS**
 
@@ -51,7 +58,7 @@
 **WORK HISTORY**
 
 - **Java Web Developer**, Ping Identity
-*Sept 2020 - Present*
+*Sept 2020 - June 2024*
   - Use Adobe's content management system, AEM, to provide the structure for team members to quickly design, publish and modify web content on the company's main website. Well-versed with the technologies for constructing and maintaining a robust, scalable web presence at: www.pingidentity.com.
   - Cloud computing work: Independently built AWS Lambda Functions, AWS Api Gateways, CloudWatch services, and updated our Cloudfront CDN, along with an accompanying GitLab-CI pipeline, in an effort to migrate endpoints from our CMS to AWS. I held responsibility for the architecture, pipeline, IaC tool, and built it all from start to finish.
   - Wrote the Terraform configurations for the services and wrote the NodeJS code of the Lambda Functions for the migrated endpoint. There have not been any records of them failing since they were built. These endpoints are vital and cannot fail.
