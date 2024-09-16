@@ -21,6 +21,9 @@ body {
     page-break-before: always;
     height: 1px;
   } /* page-break-after works, as well */
+  .sub_skill {
+    page-break-inside: avoid;
+  }
 }
 :root {
   --colorblue: #2a2e33;
@@ -127,6 +130,11 @@ li {
   }
 }
 @media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media print {
   .container {
     width: 1200px;
   }
@@ -326,8 +334,6 @@ li {
 .list_skills .sub_skill {
   position: relative;
   margin: 8px 0px;
-  page-break-after: avoid;
-  page-break-inside: avoid;
   color: #fefff9;
   background-color: rgba(63, 63, 39, 0.8);
   background-color: transparent;

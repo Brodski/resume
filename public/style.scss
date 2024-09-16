@@ -32,6 +32,10 @@
         page-break-before: always; 
         height: 1px;
     } /* page-break-after works, as well */
+    .sub_skill {
+        // page-break-before: always; 
+        page-break-inside: avoid;
+    }
 }
 :root {
     --colorblue: #2a2e33;
@@ -146,6 +150,11 @@ li {
     }
 }
 @media (min-width: 1200px) {
+    .container{
+        width: 1200px;
+    }
+}
+@media print {
     .container{
         width: 1200px;
     }
@@ -419,8 +428,8 @@ li {
         position: relative;
         margin: 8px 0px;
     
-        page-break-after: avoid;
-        page-break-inside: avoid;
+        // page-break-after: avoid;
+        // page-break-inside: avoid;
         
         color: #fefff9;
         background-color: #3f3f27cc;

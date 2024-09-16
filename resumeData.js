@@ -32,8 +32,9 @@ const descPing = [
     'Collaborate with designers, marketing, SEO, and content teams, ensuring alignment to meet and exceed \
         business objectives.', 
     'Provided guidance and support to new employees and interns, facilitating their success, onboarding and integration into the organization.',
+    'Associate Developer was my job title at first, final job title was Senior Developer.',
 ]
-const jobPing = new Job("Java Web Developer", "at Ping Identity", "Sept 2020", "June 2024", descPing)
+const jobPing = new Job("Senior Java Web Developer", "at Ping Identity", "Sept 2020", "June 2024", descPing)
 
 
 
@@ -84,7 +85,7 @@ const projAndriod = new Job(
 // #######################################################
 const descScraper =["Transcribes about 100 hours of videos to text daily.",
     "Uses <a href='https://github.com/Vaibhavs10/insanely-fast-whisper'> Insanely Fast Whisper </a>, an ultra fast version of <a href='https://github.com/openai/whisper'> OpenAI's Whisper </a>.",
-    "Runs docker images daily in AWS. Primarily uses ECS, ECR, Lambda, the cheap GPU cloud provider vast.ai, and managed with Terraform. Written in Python and some NodeJS."]
+    "Runs docker images daily in AWS. Primarily uses ECS, ECR, Lambda, the GPU cloud provider <a href='https://vast.ai'> vast.ai </a>, and managed with Terraform. Written in Python and some NodeJS."]
 const projScraper = new Job(
     "Name: Transcriber app", 
     "Personal project - <a href='https://github.com/Brodski/scraper-dl-vids'> Github</a>", 
@@ -157,6 +158,7 @@ const projGit = new Job(
 
 
 const Jobs = [jobPing, jobCharter]
-const Projects = [projAndriod, projScraper, projVFO, projMV, projResume, projGit ]
+// const Projects = [projScraper, projAndriod, projVFO, projMV, projResume, projGit ]
+const Projects = [projScraper, projAndriod, projVFO, projResume, projGit ]
 module.exports = { Jobs, Projects };
 

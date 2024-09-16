@@ -25,6 +25,7 @@
 
 - **AWS Certified Cloud Practitioner**
   - Acquired: July 2024
+  - [Credly badge](https://www.credly.com/badges/6dca7d30-79c0-4e74-8396-35c2db85ffc9/public_url)
 
 ---
 
@@ -67,6 +68,7 @@
   - Reworked the website that ultimately improved customer interaction by 61%.
   - Collaborate with designers, marketing, SEO, and content teams, ensuring alignment to meet and exceed business objectives.
   - Provided guidance and support to new employees and interns, facilitating their success, onboarding and integration into the organization.
+  - Associate Developer was my job title at first, final job title was Senior Developer.
 
 - **Platform Infrastructure Integration / Automation Engineer**, Charter Communications
 *Dec 2018 - Oct 2019*
@@ -83,7 +85,7 @@
 - **Transcriber app**
   - Transcribes about 100 hours of videos to text daily.
   - Uses [Insanely Fast Whisper](https://github.com/Vaibhavs10/insanely-fast-whisper), an ultra fast version of [OpenAI's Whisper](https://github.com/openai/whisper).
-  - Runs docker images daily in AWS. Primarily uses ECS, ECR, Lambda, the cheap GPU cloud provider vast.ai, and managed with Terraform. Written in Python and some NodeJS.
+  - Runs docker images daily in AWS. Primarily uses ECS, ECR, Lambda, the GPU cloud provider [vast.ai](https://vast.ai/), and managed with Terraform. Written in Python and some NodeJS.
   - [Github repo](https://github.com/Brodski/scraper-dl-vids) 
 
 - **Brodski Minimalist Music Player With Swipe & Touch**

@@ -14,7 +14,6 @@ app.use(express.static(__dirname + '/public'))
 app.use(express.static(__dirname + '/markdown'))
 
 const {Jobs, Projects} = require("./resumeData");
-const {Jobs2, Projects2} = require("./resumeData2");
 const {Jobs_chatgpt, Projects_chatgpt} = require("./resumeDataChatgpt");
 
 //////////////////////////
@@ -35,10 +34,6 @@ app.get('/markdown', function(req, res) {
 //////////////////////////
 // ALT TESTING VERSIONS //
 //////////////////////////
-app.get('/2', function(req, res) {
-    console.log('sending /2')
-    res.render('index', { jobs: Jobs2, projects: Projects2 })
-})
 app.get('/3', function(req, res) {
     console.log('sending /3')
     res.render('index', { jobs: Jobs_chatgpt, projects: Projects_chatgpt })
