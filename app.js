@@ -14,14 +14,15 @@ app.use(express.static(__dirname + '/public'))
 app.use(express.static(__dirname + '/markdown'))
 
 const {Jobs, Projects} = require("./resumeData");
-const {Jobs_chatgpt, Projects_chatgpt} = require("./resumeDataChatgpt");
+// const {Jobs_chatgpt, Projects_chatgpt} = require("./resumeDataChatgpt");
 
 //////////////////////////
 //    REAL ENDPOINTS    //
 //////////////////////////
 app.get('/', function(req, res) {
     console.log('sending homepage')
-    res.render('index', { jobs: Jobs, projects: Projects })
+    // res.render('index', { jobs: Jobs, projects: Projects })
+    res.render('index', { jobs: Jobs, projects: [] })
 })
 
 app.get('/markdown', function(req, res) {
@@ -34,10 +35,10 @@ app.get('/markdown', function(req, res) {
 //////////////////////////
 // ALT TESTING VERSIONS //
 //////////////////////////
-app.get('/3', function(req, res) {
-    console.log('sending /3')
-    res.render('index', { jobs: Jobs_chatgpt, projects: Projects_chatgpt })
-})
+// app.get('/3', function(req, res) {
+//     console.log('sending /3')
+//     res.render('index', { jobs: Jobs_chatgpt, projects: Projects_chatgpt })
+// })
 
 
 //////////////////////////

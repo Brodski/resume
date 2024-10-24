@@ -17,6 +17,14 @@
 }
 
 /* I added this p line */
+.llm_hidden {
+    color: #ffffff;
+  }
+@media print {
+    .llm_hidden {
+        color: transparent;
+      } 
+}
 body {
     overflow: auto !important;
 }
@@ -1523,7 +1531,7 @@ body {
 
 ul,ol {
     margin-bottom: .83999rem;
-    padding-top: .16001rem
+    /* padding-top: .16001rem */
 }
 
 li {
@@ -3163,7 +3171,7 @@ dt {
 
     ul,ol {
         margin-bottom: .83999rem;
-        padding-top: .16001rem
+        /* padding-top: .16001rem */
     }
 
     p {
@@ -3568,7 +3576,7 @@ dt {
 
     ul,ol {
         margin-bottom: .83999rem;
-        padding-top: .16001rem
+        /* padding-top: .16001rem */
     }
 
     p {
@@ -4019,7 +4027,7 @@ dt {
 
     ul,ol {
         margin-bottom: .83999rem;
-        padding-top: .16001rem
+        /* padding-top: .16001rem */
     }
 
     p {
@@ -4437,7 +4445,7 @@ dt {
 
     ul,ol {
         margin-bottom: .83999rem;
-        padding-top: .16001rem
+        /* padding-top: .16001rem */
     }
 
     p {

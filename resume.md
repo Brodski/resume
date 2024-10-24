@@ -5,9 +5,10 @@
 
 ## Christopher Brodski
 - Email: cbrodski@gmail.com
-- Location: Denver, CO
+<!-- - Location: Denver, CO -->
 - GitHub: [github.com/Brodski](https://github.com/Brodski)
-- Resume *(fancy)*: [resume.bski.one](https://resume.bski.one)
+<!-- - Resume *(fancy)*: [resume.bski.one](https://resume.bski.one) -->
+- [LinkedIn] (https://www.linkedin.com/in/christopher-brodski)
 
 ---
 
@@ -32,17 +33,18 @@
 **SKILLS**
 
 - **Languages**
-  - Java, JavaScript, Python, Kotlin, C#
+  - **Advanced:** Java, Python, Javascript / NodeJS
+  - **Highly Proficient:** Kotlin, C#
 
 - **Backend**
-  - REST API, Java Servlets / Spring Boot, NodeJS / ExpressJS
-
-- **Database / Storage**
-  - S3, SQL, MongoDB
+  - REST API, Java Servlets / Spring Boot, NodeJS
 
 - **Frontend**
   - **Client-Side:** React, HTML / CSS / JavaScript, Browser Extensions
   - **Server-Side:** NodeJS, EJS, Java Server Pages (JSP)
+
+- **Database / Storage**
+  - S3, SQL, MongoDB
 
 - **Cloud Computing (AWS)**
   - S3, Lambda, API Gateway, CloudFront, Route 53, IAM, CloudWatch, Elastic Beanstalk
@@ -58,7 +60,7 @@
 
 **WORK HISTORY**
 
-- **Java Web Developer**, Ping Identity
+- **Java Web Developer**, at Ping Identity
 *Sept 2020 - June 2024*
   - Use Adobe's content management system, AEM, to provide the structure for team members to quickly design, publish and modify web content on the company's main website. Well-versed with the technologies for constructing and maintaining a robust, scalable web presence at: www.pingidentity.com.
   - Cloud computing work: Independently built AWS Lambda Functions, AWS Api Gateways, CloudWatch services, and updated our Cloudfront CDN, along with an accompanying GitLab-CI pipeline, in an effort to migrate endpoints from our CMS to AWS. I held responsibility for the architecture, pipeline, IaC tool, and built it all from start to finish.
@@ -68,9 +70,9 @@
   - Reworked the website that ultimately improved customer interaction by 61%.
   - Collaborate with designers, marketing, SEO, and content teams, ensuring alignment to meet and exceed business objectives.
   - Provided guidance and support to new employees and interns, facilitating their success, onboarding and integration into the organization.
-  - Associate Developer was my job title at first, final job title was Senior Developer.
+  - Began as an Associate Developer, ended as Senior Developer.
 
-- **Platform Infrastructure Integration / Automation Engineer**, Charter Communications
+- **Platform Infrastructure Integration / Automation Engineer**, at Charter Communications
 *Dec 2018 - Oct 2019*
   - Part of a DevOps/SRE team, contributing to deployment processes and quality assurance.
   - Routinely accessed virtual machines (VMs) via SSH to execute and develop various scripts. Used command-line tools to navigate the internal file system of the VMs to locate log files, view, filter, and analyze logs for troubleshooting and performance monitoring.

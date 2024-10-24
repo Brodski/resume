@@ -32,7 +32,7 @@ const descPing = [
     'Collaborate with designers, marketing, SEO, and content teams, ensuring alignment to meet and exceed \
         business objectives.', 
     'Provided guidance and support to new employees and interns, facilitating their success, onboarding and integration into the organization.',
-    'Associate Developer was my job title at first, final job title was Senior Developer.',
+    'Began as an Associate Developer, ended as Senior Developer.',
 ]
 const jobPing = new Job("Senior Java Web Developer", "at Ping Identity", "Sept 2020", "June 2024", descPing)
 
