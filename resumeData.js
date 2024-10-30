@@ -23,14 +23,17 @@ const descPing = [
     `Wrote the Terraform configurations for the services and wrote the NodeJS code of the Lambda Functions for \
         the migrated endpoint. There have not been any records of them failing since they were built. These \
         endpoints are vital and cannot fail.`,
+    `Dockerized applications for deployment in our cloud environments, Adobe and AWS.`, 
     `Backend work: built APIs using Java servlets for client-side and server-side rendering, ensuring seamless \
         interaction and data exchange. Automated jobs for content crawling, edits, and general page maintenance.\
         Experienced with thread management for asynchronous operations.`,
     'Frontend work: built web components for content and design teams, enabling static and dynamic page \
-        functionalities across the website. Advanced in JavaScript, HTML, and CSS.',
-    'Reworked the website that ultimately improved customer interaction by 61%.',
-    'Collaborate with designers, marketing, SEO, and content teams, ensuring alignment to meet and exceed \
-        business objectives.', 
+        functionalities across the website.', //  Advanced in JavaScript, HTML, and CSS.
+    `Wrote and designed components that used LLMs (via OpenAI's API) to customize website content towards users. \
+        It was semi-automated, allowing the content team to trigger content customization with a single click.`,
+    // 'Reworked the website that ultimately improved customer interaction by 61%.',
+    // 'Collaborate with designers, marketing, SEO, and content teams, ensuring alignment to meet and exceed \
+    //     business objectives.', 
     'Provided guidance and support to new employees and interns, facilitating their success, onboarding and integration into the organization.',
     'Began as an Associate Developer, ended as Senior Developer.',
 ]
@@ -54,7 +57,8 @@ const descCharter  = [
         data into our Splunk server for real-time data analysis. I also created a Splunk dashboard to visualize and examine the data.",
     "Helped build a new test environment for an existing project in AWS by redeploying that project at a \
         scaled-down cluster size. This involved researching company documents and working with the team that \
-        managed that project; editing configuration files like Terraform, then executing the deployment."
+        managed that project; editing configuration files like Terraform, then executing the deployment.",
+    "Built frontend framework with React and Redux"
 
 ]
 const jobCharter = new Job("Platform Infrastructure Integration / Automation Engineer", "at Charter Communications", "Dec 2018", "Oct 2019", descCharter )

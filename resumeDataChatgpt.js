@@ -26,8 +26,9 @@ const descPing = [
             `Cloud computing work: Wrote Lambda Functions, developed Terraform configurations, and established the \
                 accompanying GitLab-CI pipelines.\
                 Occasional work with our Cloudfront CDN, tweaking configuration or adding new behaviors.`,
-            'Reworked the website that ultimately improved customer interation by 61%.',
-            'Collaborate with designers, marketing, SEO, and content teams, ensuring alignment to meet and exceed business objectives.', 
+            `Dockerized applications to be deployed in our cloud environments, Adobe & AWS.`, 
+            // 'Reworked the website that ultimately improved customer interation by 61%.',
+            // 'Collaborate with designers, marketing, SEO, and content teams, ensuring alignment to meet and exceed business objectives.', 
             'Provided guidance and support to new employees and interns, facilitating their success, onboarding and integration into the organization.',
         ]
 const jobPing = new Job("Java Web Developer", "at Ping Identity", "Sept 2020", "June 2024", descPing)
@@ -49,7 +50,6 @@ const descCharter  = [
                 "Help build a new test environment for an existing project in AWS by redeploying that project at a scaled \
                     down cluster size. This involved researching company documents and working with the team that managed \
                     that project; editing configuration files like Terraform, then executing the deployment."
-         
                 ]
 const jobCharter = new Job("Platform Infrastructure Integration / Automation Engineer", "at Charter Communications", "Dec 2018", "Oct 2019", descCharter )
 
