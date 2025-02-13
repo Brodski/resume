@@ -16,9 +16,6 @@
     border-radius: 4px
 }
 /* I added this too */
-h6 {
-    margin-bottom: 4px !important;
-}
 /* I added this p line */
 .llm_hidden {
     color: #ffffff;
@@ -38,7 +35,26 @@ html pre {
     line-height: 1.9rem;
 }
 /* I added this mini wrapper  */
-
+h6  {   
+    line-height: 1rem;
+    padding-top: 4px !important;
+    margin-bottom: 4px !important;
+}
+ul {
+    margin-bottom: 8px !important;
+    padding-left: 18px;
+}
+ul > li > ul {
+    margin-bottom: 0px !important;
+}
+ul > *{
+    /* line-height: 1.5rem; */
+    line-height: 20px;
+}
+hr {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
 #smallmaker * {
     line-height: 1.5rem;
 }

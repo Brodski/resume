@@ -25,7 +25,7 @@ app.get('/', function(req, res) {
 })
 
 app.get('/fancy', function(req, res) {
-    console.log('sending fancy')
+    console.log('sending markdown')
     res.render('index', { jobs: Jobs, projects: [] })
 })
 app.get('/aem', function(req, res) {

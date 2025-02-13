@@ -15,12 +15,9 @@
   - Metropolitan State University of Denver
 - **B.S. Applied Mathematics**
   - University of Colorado Denver
----
-  
-**CERTIFICATES**
 - **AWS Certified Cloud Practitioner**
-  - Acquired: July 2024
-  - [Credly badge](https://www.credly.com/badges/6dca7d30-79c0-4e74-8396-35c2db85ffc9/public_url)
+  - Acquired: July 2024 
+  - Credly badge https://www.credly.com/badges/6dca7d30-79c0-4e74-8396-35c2db85ffc9/public_url
 
 ---
 

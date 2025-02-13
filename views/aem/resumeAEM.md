@@ -7,18 +7,13 @@
 ---
 
 **EDUCATION**
-
 - **B.S. Computer Science**
   - Metropolitan State University of Denver
 - **B.S. Applied Mathematics**
   - University of Colorado Denver
-
----
-  
-**CERTIFICATES**
 - **AWS Certified Cloud Practitioner**
-  - Acquired: July 2024
-  - [Credly badge](https://www.credly.com/badges/6dca7d30-79c0-4e74-8396-35c2db85ffc9/public_url)
+  - Acquired: July 2024 
+  - Credly badge https://www.credly.com/badges/6dca7d30-79c0-4e74-8396-35c2db85ffc9/public_url
 
 ---
 
@@ -49,7 +44,8 @@
 **Senior Java Web Developer**, at Ping Identity
 *Sept 2020 - June 2024*
   - **Overview:** 
-    - Develop Adobe Experience Manager (AEM) components, templates, and backend services to support a scalable, high-performance web presence at Ping Identity (www.pingidentity.com). Extend AEM capabilities by integrating AWS services like Lambda to enhance backend functionality.
+    - Build and maintain the company website - Ping Identity (www.pingidentity.com)
+    - Develop Adobe Experience Manager (AEM) components, templates, and backend services to support a scalable, high-performance web presence. Extend AEM capabilities by integrating AWS services like Lambda to enhance backend functionality.
   - **AEM:**
     - Contributed to the re-architecture of the AEM codebase, updating build files (Gulp & Maven), refining templates, restructuring components entirely to be JSP-base, and how these components interact and reference each other.
     - Developed Groovy scripts for bulk content updates, automated cleanups, and debugging complex site-wide issues.
