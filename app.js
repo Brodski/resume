@@ -13,19 +13,19 @@ app.set('views', './views')
 app.use(express.static(__dirname + '/public'))
 app.use(express.static(__dirname + '/markdown'))
 
-const {Jobs, Projects} = require("./resumeData");
+const {Jobs, Projects} = require("./views/fancy/jobData");
 
 ///////////////////////////////////////////////
 ////////////    REAL ENDPOINTS    /////////////
 ///////////////////////////////////////////////
 app.get('/', function(req, res) {
-    console.log('sending homepage/markdown')
+    console.log('sending resume')
     // res.render('index', { jobs: Jobs, projects: Projects })
-    res.render('markdown/markdown.ejs', { })
+    res.render('resume/resume.ejs', { })
 })
 
 app.get('/fancy', function(req, res) {
-    console.log('sending markdown')
+    console.log('sending fancy')
     res.render('index', { jobs: Jobs, projects: [] })
 })
 app.get('/aem', function(req, res) {

@@ -37,8 +37,8 @@ html pre {
 /* I added this mini wrapper  */
 h6  {   
     line-height: 1rem;
-    padding-top: 4px !important;
-    margin-bottom: 4px !important;
+    padding-top: 0px !important;
+    margin-bottom: 12px !important;
 }
 ul {
     margin-bottom: 8px !important;
