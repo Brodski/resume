@@ -15,7 +15,10 @@
     background-color: #f9f2f4;
     border-radius: 4px
 }
-
+/* I added this too */
+h6 {
+    margin-bottom: 4px !important;
+}
 /* I added this p line */
 .llm_hidden {
     color: #ffffff;

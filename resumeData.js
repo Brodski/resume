@@ -31,6 +31,8 @@ const descPing = [
         functionalities across the website.', //  Advanced in JavaScript, HTML, and CSS.
     `Wrote and designed components that used LLMs (via OpenAI's API) to customize website content towards users. \
         It was semi-automated, allowing the content team to trigger content customization with a single click.`,
+    `Applied SQL to design and expand database tables, enforce data normalization standards, and ensure data \
+        integrity through well-structured primary and foreign key relationships`,
     // 'Reworked the website that ultimately improved customer interaction by 61%.',
     // 'Collaborate with designers, marketing, SEO, and content teams, ensuring alignment to meet and exceed \
     //     business objectives.', 

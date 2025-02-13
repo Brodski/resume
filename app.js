@@ -14,36 +14,30 @@ app.use(express.static(__dirname + '/public'))
 app.use(express.static(__dirname + '/markdown'))
 
 const {Jobs, Projects} = require("./resumeData");
-// const {Jobs_chatgpt, Projects_chatgpt} = require("./resumeDataChatgpt");
 
-//////////////////////////
-//    REAL ENDPOINTS    //
-//////////////////////////
+///////////////////////////////////////////////
+////////////    REAL ENDPOINTS    /////////////
+///////////////////////////////////////////////
 app.get('/', function(req, res) {
-    console.log('sending homepage')
+    console.log('sending homepage/markdown')
     // res.render('index', { jobs: Jobs, projects: Projects })
-    res.render('index', { jobs: Jobs, projects: [] })
-})
-
-app.get('/markdown', function(req, res) {
-    console.log('sending markdown')
     res.render('markdown/markdown.ejs', { })
 })
 
+app.get('/fancy', function(req, res) {
+    console.log('sending fancy')
+    res.render('index', { jobs: Jobs, projects: [] })
+})
+app.get('/aem', function(req, res) {
+    console.log('sending aem')
+    res.render('aem/aem.ejs', { })
+})
 
 
-//////////////////////////
-// ALT TESTING VERSIONS //
-//////////////////////////
-// app.get('/3', function(req, res) {
-//     console.log('sending /3')
-//     res.render('index', { jobs: Jobs_chatgpt, projects: Projects_chatgpt })
-// })
 
-
-//////////////////////////
-//    BEGIN SERVER      //
-//////////////////////////
+////////////////////////////////////////////////
+///////////      BEGIN SERVER        ///////////
+////////////////////////////////////////////////
 
 // Create the serverless handler outside of the main handler function
 const serverlessHandler = serverless(app);
