@@ -15,9 +15,16 @@
   - Metropolitan State University of Denver
 - **B.S. Applied Mathematics**
   - University of Colorado Denver
+- **AWS Certified Solutions Architect - Professional**  
+  - Acquired: July 2025  
+  - Credly badge https://www.credly.com/badges/b16ddcb7-31c9-44fd-b276-d311de1933ba/public_url  
+- **AWS Certified Solutions Architect - Associate**  
+  - Acquired: May 2025  
+  - Credly badge https://www.credly.com/badges/183b2c05-0c7e-4afe-aa49-ca89468d239b/public_url  
 - **AWS Certified Cloud Practitioner**
   - Acquired: July 2024 
   - Credly badge https://www.credly.com/badges/6dca7d30-79c0-4e74-8396-35c2db85ffc9/public_url
+
 
 ---
 
@@ -43,8 +50,8 @@
 
 ---
 
-**WORK HISTORY**
-**Senior Java Web Developer**, at Ping Identity
+**WORK HISTORY**  
+**Senior Java Web Developer**, at Ping Identity  
 *Sept 2020 - June 2024*
   - **Overview:** 
     - Build and maintain the company website - Ping Identity (www.pingidentity.com)
@@ -74,6 +81,10 @@
     - Wrote a Python-based testing tool for quality assurance on a DHCP server cluster, utilizing the hypervisor's API for precise control over both worker and master virtual machines during stress testing.
     - Deployed docker apps, running Telegraf, to gather metrics from the VMs running the DHCP servers. It streamed data into our Splunk server for real-time data analysis. I also created a Splunk dashboard to visualize and examine the data.
     - Helped build a new test environment for an existing project in AWS by redeploying that project at a scaled-down cluster size. This involved researching company documents and working with the team that managed that project; editing configuration files like Terraform, then executing the deployment.   
+
+---
+**SIDE PROJECTS**  
+- [https://resume.bski.one/projects](https://resume.bski.one/projects)
 
 
 <!--  **PROJECTS**

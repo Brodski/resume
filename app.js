@@ -26,13 +26,16 @@ app.get('/', function(req, res) {
 
 app.get('/fancy', function(req, res) {
     console.log('sending fancy')
-    res.render('index', { jobs: Jobs, projects: [] })
+    res.render('fancy/index', { jobs: Jobs, projects: [] })
 })
 app.get('/aem', function(req, res) {
     console.log('sending aem')
     res.render('aem/aem.ejs', { })
 })
-
+app.get('/projects', function(req, res) {
+    console.log('sending projects')
+    res.render('projects/projects.ejs')
+})
 
 
 ////////////////////////////////////////////////
