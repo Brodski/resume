@@ -4,7 +4,7 @@
 <!-- https://dillinger.io/  -->
 
 ## Christopher Brodski
-###### Full-stack developer with 5 years of experience, specializing in backend development and cloud infrastructure using Java, Python, and AWS to build scalable systems.
+###### Full-stack developer with 5 years of experience specializing in backend development and AWS cloud infrastructure. Focused on building scalable systems.
 - Email: cbrodski@gmail.com
 - GitHub: [github.com/Brodski](https://github.com/Brodski)
 - LinkedIn: [linkedin.com/in/christopher-brodski](https://www.linkedin.com/in/christopher-brodski)
@@ -30,20 +30,20 @@
 
 **SKILLS**
 - **Languages**
-  - **Advanced:** Java, Python, Javascript / NodeJS
-  - **Highly Proficient:** Kotlin, C#
+  - **Advanced:** Java, Python, TypeScript, JavaScript, Node.js
+  - **Secondary:** Kotlin
 - **Backend**
-  - REST API, Java Servlets / Spring Boot, NodeJS
+  - Spring Boot, Apache Sling, REST APIs
 - **Frontend**
-  - **Client-Side:** React, HTML / CSS / JavaScript, Browser Extensions
-  - **Server-Side:** NodeJS, EJS, Java Server Pages (JSP)
-  - **Dev-Tools:** Gulp.js, Webpack, yarn, npm, SASS, ESLint, Bootstrap
+  - **Client-Side:** React, HTML, CSS, Browser Extensions
+  - **Server-Side Rendering (SSR):** Next.js, EJS, Java Server Pages (JSP)
+  - **Dev Tools:** Gulp.js, Webpack, yarn, npm
 - **Database / Storage**
-  - S3, SQL, MongoDB
+  - S3, MySQL (SQL), MongoDB, Redis
 - **Cloud Computing (AWS)**
-  - S3, Lambda, API Gateway, CloudFront, Route 53, IAM, CloudWatch, Elastic Beanstalk
-- **Dev Ops**
-  - **Skilled:** Docker, Terraform
+  - S3, Lambda, API Gateway, CloudFront, ElastiCache, Route 53, IAM, CloudWatch
+- **DevOps**
+  - **Skilled:** Docker, Terraform, GitLab CI/CD
   - **Experienced:** Microservices, Kubernetes, Jenkins
 - **Linux Networking**
   - nslookup, dig, ifconfig, netstat, traceroute, curl, vim, awk, grep
@@ -51,65 +51,38 @@
 ---
 
 **WORK HISTORY**  
-**Senior Java Web Developer**, at Ping Identity  
+**Senior Web Developer**, at Ping Identity  
 *Sept 2020 - June 2024*
-  - **Overview:** 
-    - Build and maintain the company website - Ping Identity (www.pingidentity.com)
-    - Develop Adobe Experience Manager (AEM) components, templates, and backend services to support a scalable, high-performance web presence. Extend AEM capabilities by integrating AWS services like Lambda to enhance backend functionality.
-  - **Cloud infrastructure work:**
-    - Built endpoints critical to system functionality that operated without failure since deployment. Accomplished this by deploying AWS Lambda endpoints using Terraform and Node.js.
-    - Migrated endpoints off of our current cloud service Adobe to AWS instead; designing and implementing the architecture, pipeline, and IaC tool from start to finish. Independently built AWS Lambda functions, API Gateways, and an accompanying GitLab CI/CD pipeline.
-    - Dockerized applications for deployment in our cloud environments, Adobe and AWS.
-  - **Backend work:** 
-    - Built Java servlets to dynamically generate HTML pages and interact with databases via SQL, enabling seamless content rendering and data exchange. Developed automated jobs for content crawling, bulk edits, data validation, and system monitoring.
-    - Wrote and designed services that used LLMs (via OpenAI's API) to personalize website content for users. Implemented request batching, response caching, and fallback handling to ensure efficient API usage and content reliability.
-    - Experience with Java threading and asynchronous workflows (thread pools, futures). 
-    - Experience with Maven build configurations, including lifecycles, module dependency management, and debugging maven dependencies conflicts.
-  - **Frontend work:** 
-    - Developed modular, reusable UI components with React and JSP for enterprise applications, supporting dynamic content rendering, localization, and API-driven interactions.
-    - Frequent updates to frontend development workflow by configuring CI/CD pipelines, automating testing, and optimizing builds with Webpack and Gulp.js.
-    - Working knowledge of asset optimization, cache busting (CDN & client-side), Google Tag Manager, preloading strategies, service workers, accessiblity, and performance profiling.
-  - **Soft skills** Mentored new employees and interns, facilitating their success, providing technical guidance onboarding and integration into the organization.
+  - **Summary:** 
+    - Built and maintained Ping Identity's public website (www.pingidentity.com) using Adobe Experience Manager (AEM), designing UI components, templates, and backend services for a scalable, content-driven platform.  
+    - Engineered cloud-native backend solutions using AWS services, extending the platform's capabilities and performance. 
+  - **Cloud Infrastructure:**
+    - Re-architected select endpoints from a monolithic application into AWS as microservices to reduce infrastructure costs and improve scalability, implementing IaC and CI/CD with Terraform and GitLab CI/CD.
+    - Reduced database load and improved response times by designing and building a caching layer for user sessions with Amazon ElastiCache for Redis.
+    - Containerized applications with Docker for deployment across Adobe and AWS environments, standardizing deployments and streamlining operations.
+    - Developed AWS Lambda functions (Node.js) exposed via API Gateway that ran in production without interruption, supporting core business functions.
+  - **Backend:**
+    - Designed services that used LLMs (via OpenAI's API) to personalize website content, ensuring API efficiency and reliability through batching, caching, and fallbacks.
+    - Built a developer-facing API platform with Swagger/OpenAPI documentation, standardizing endpoints and enabling multiple teams to integrate consistently across products.
+    - Rewrote the login flow in Spring Boot, addressing security vulnerabilities and implementing centralized authentication with an external server.
+    - Automated large-scale content operations (crawling, bulk edits, validation), reducing manual workload and improving data integrity.
+  - **Frontend:**
+    - Modernized JSP-based views by replacing legacy vanilla JS/HTML with React, creating modular, reusable UI components that improved maintainability, accelerated development, and supported API-driven interfaces.
+    - Enhanced frontend development workflows by configuring CI/CD pipelines, automating testing with Jest, and optimizing builds with Webpack and Gulp.js, reducing deployment time.
+    - Implemented asset optimization and performance strategies (cache busting, CDN delivery, preloading, service workers) and ensured web accessibility compliance (WCAG/ADA) to improve site performance and user experience.
+  - **Soft Skills:** Mentored a new employee and an intern (later hired full-time), providing technical guidance for onboarding and integration into the organization.
 
 **Platform Infrastructure Integration / Automation Engineer**, at Charter Communications  
 *Dec 2018 - Oct 2019*
-  - **Overview:**
-    - Part of a DevOps/SRE team, contributing to deployment processes and quality assurance.
+  - **Summary:**
+    - Part of a DevOps/SRE team focused on automation, infrastructure, and QA across containerized and virtualized environments (Kubernetes, Docker, VMware vSphere).
   - **Job Duties:**
-    - Routinely accessed virtual machines (VMs) via SSH to execute and develop various scripts. Used command-line tools to navigate the internal file system of the VMs to locate log files, view, filter, and analyze logs for troubleshooting and performance monitoring.
-    - Developed a Flask/Python-based proxy server to streamline traffic and facilitate data retrieval from a MongoDB database. Added frontend framework with React. 
-    - Wrote a Python-based testing tool for quality assurance on a DHCP server cluster, utilizing the hypervisor's API for precise control over both worker and master virtual machines during stress testing.
-    - Deployed docker apps, running Telegraf, to gather metrics from the VMs running the DHCP servers. It streamed data into our Splunk server for real-time data analysis. I also created a Splunk dashboard to visualize and examine the data.
-    - Helped build a new test environment for an existing project in AWS by redeploying that project at a scaled-down cluster size. This involved researching company documents and working with the team that managed that project; editing configuration files like Terraform, then executing the deployment.   
+    - Built a Flask/Python proxy service to route requests and retrieve data from MongoDB; developed a React-based frontend interface for visualization and interaction.
+    - Wrote a Python-based testing tool for quality assurance on a Kubernetes cluster, using the kubectl CLI and the hypervisor's API.
+    - Deployed containerized applications with Docker and Telegraf to collect metrics from Kubernetes clusters for system monitoring.
+    - Deployed a scaled-down test environment by modifying Terraform configs and collaborating with project owners to redeploy services for QA.
+    
 
 ---
 **SIDE PROJECTS**  
 - [https://resume.bski.one/projects](https://resume.bski.one/projects)
-
-
-<!--  **PROJECTS**
-
-- **Transcriber app**
-  - Transcribes about 100 hours of videos to text daily.
-  - Uses [Insanely Fast Whisper](https://github.com/Vaibhavs10/insanely-fast-whisper), an ultra fast version of [OpenAI's Whisper](https://github.com/openai/whisper).
-  - Runs docker images daily in AWS. Primarily uses ECS, ECR, Lambda, the GPU cloud provider [vast.ai](https://vast.ai/), and managed with Terraform. Written in Python and some NodeJS.
-  - [Github repo](https://github.com/Brodski/scraper-dl-vids) 
-
-- **Brodski Minimalist Music Player With Swipe & Touch**
-  - Android Native app written in Kotlin. The app plays local files from the user's phone, available on Google Play Store.
-  - This app is unique to other apps because I masterfully implement gestures to create the perfect user experience.
-  - ~~[Google Play Store Link](https://play.google.com/store/apps/details?id=com.bskimusicplayer.mediaplayer)~~ 
-  - [Github repo](https://github.com/Brodski/MediaPlayer#overview) 
-
-- **Video Feed Organizer (VFO)**
-  - Single-page web application that communicates to Youtube's REST API for profile customization.
-  - Frontend was built using React, Javascript, SASS and Materialize CSS framework.
-  - Backend is a Java Springboot server and a MongoDB database.
-  - [https://vfo.one](https://vfo.one)
-
-- **Bski Control Video with Mouse**
-  - Browser extension for Firefox and Chrome
-  - A fork from another extension that gives users more control over videos in the browser.
-  - [Mozilla Addons Link](https://addons.mozilla.org/en-US/firefox/addon/bski-control-video-with-mouse)
-
-For more projects, visit my GitHub: [https://github.com/Brodski](https://github.com/Brodski) -->
