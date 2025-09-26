@@ -1,5 +1,5 @@
 # Projects
-#### Youtube demos with light tech commentary
+#### Demos with commentary
 ---
 **Twitch Transcripts**   
 - *2023 - present*  
@@ -9,7 +9,7 @@
 
 **Bski Radio Alarm**   
 - *2025 - present*  
-- *An alarm clock app that plays online radio streams. For Android.*
+- *An alarm clock app that plays radio streams. For Android.*
   - [Demo](https://www.youtube.com/watch?v=AgHbi2OrC0w) (27 sec)
 
 **Mouse Control: Volume, Skip, & Speed for Video**   

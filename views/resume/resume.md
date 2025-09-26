@@ -15,15 +15,18 @@
   - Metropolitan State University of Denver
 - **B.S. Applied Mathematics**
   - University of Colorado Denver
+- **AWS Certified AI Practitioner**
+  - Acquired: Sept 2025 [[↗]](https://www.credly.com/badges/55b56c98-76f8-460f-8d36-4ee8ebd4b48d/public_url)
+  <!-- - Credly badge https://www.credly.com/badges/55b56c98-76f8-460f-8d36-4ee8ebd4b48d/public_url   -->
 - **AWS Certified Solutions Architect - Professional**  
-  - Acquired: July 2025  
-  - Credly badge https://www.credly.com/badges/b16ddcb7-31c9-44fd-b276-d311de1933ba/public_url  
+  - Acquired: July 2025  [[↗]](https://www.credly.com/badges/b16ddcb7-31c9-44fd-b276-d311de1933ba/public_url)
+  <!-- - Credly badge https://www.credly.com/badges/b16ddcb7-31c9-44fd-b276-d311de1933ba/public_url   -->
 - **AWS Certified Solutions Architect - Associate**  
-  - Acquired: May 2025  
-  - Credly badge https://www.credly.com/badges/183b2c05-0c7e-4afe-aa49-ca89468d239b/public_url  
+  - Acquired: May 2025  [[↗]](https://www.credly.com/badges/183b2c05-0c7e-4afe-aa49-ca89468d239b/public_url)
+  <!-- - Credly badge https://www.credly.com/badges/183b2c05-0c7e-4afe-aa49-ca89468d239b/public_url   -->
 - **AWS Certified Cloud Practitioner**
-  - Acquired: July 2024 
-  - Credly badge https://www.credly.com/badges/6dca7d30-79c0-4e74-8396-35c2db85ffc9/public_url
+  - Acquired: July 2024 [[↗]](https://www.credly.com/badges/6dca7d30-79c0-4e74-8396-35c2db85ffc9/public_url)
+  <!-- - Credly badge https://www.credly.com/badges/6dca7d30-79c0-4e74-8396-35c2db85ffc9/public_url   -->
 
 
 ---
@@ -36,8 +39,8 @@
   - Spring Boot, Apache Sling, REST APIs
 - **Frontend**
   - **Client-Side:** React, HTML, CSS, Browser Extensions
-  - **Server-Side Rendering (SSR):** Next.js, EJS, Java Server Pages (JSP)
-  - **Dev Tools:** Gulp.js, Webpack, yarn, npm
+  - **Server-Side Rendering (SSR):** Next.js, Java Server Pages (JSP)
+  - **Dev Tools:** Gulp.js, Webpack, Jest, yarn, npm
 - **Database / Storage**
   - S3, MySQL (SQL), MongoDB, Redis
 - **Cloud Computing (AWS)**
