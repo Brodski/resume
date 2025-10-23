@@ -54,6 +54,14 @@
 ---
 
 **WORK HISTORY**  
+<!-- **Remodeling and Construction**, at Joseph D. Brodski Remodeling  
+*Nov 2024 - Present*  
+  - Remodeling work. Kitchens, floors, walls, ect.
+
+**Job Seeking**   
+*June 2024 - Present*   
+  - Actively engaged in the job market, conducting an employment search. -->
+
 **Senior Web Developer**, at Ping Identity  
 *Sept 2020 - June 2024*
   - **Summary:** 
@@ -65,12 +73,13 @@
     - Containerized applications with Docker for deployment across Adobe and AWS environments, standardizing deployments and streamlining operations.
     - Developed AWS Lambda functions (Node.js) exposed via API Gateway that ran in production without interruption, supporting core business functions.
   - **Backend:**
-    - Designed services that used LLMs (via OpenAI's API) to personalize website content, ensuring API efficiency and reliability through batching, caching, and fallbacks.
+    - Designed services that used LLMs (via OpenAI's API) to personalize website content, ensuring API efficiency and reliability through batching, caching, and fallbacks, using Java.
     - Built a developer-facing API platform with Swagger/OpenAPI documentation, standardizing endpoints and enabling multiple teams to integrate consistently across products.
-    - Rewrote the login flow in Spring Boot, addressing security vulnerabilities and implementing centralized authentication with an external server.
-    - Automated large-scale content operations (crawling, bulk edits, validation), reducing manual workload and improving data integrity.
+    - Rewrote the login flow in Spring Boot (Java), addressing security vulnerabilities and implementing centralized authentication with an external server.
+    - Automated large-scale content operations (crawling, bulk edits, validation), reducing manual workload and improving data integrity using MySQL and Java.
+    - Frequent use of multithreading and asynchronous workflows with Java (thread pools, futures).
   - **Frontend:**
-    - Modernized JSP-based views by replacing legacy vanilla JS/HTML with React, creating modular, reusable UI components that improved maintainability, accelerated development, and supported API-driven interfaces.
+    - Modernized JSP-based views by replacing legacy vanilla JS/HTML with React and TypeScript, creating modular, reusable UI components that improved maintainability, accelerated development, and supported API-driven interfaces.
     - Enhanced frontend development workflows by configuring CI/CD pipelines, automating testing with Jest, and optimizing builds with Webpack and Gulp.js, reducing deployment time.
     - Implemented asset optimization and performance strategies (cache busting, CDN delivery, preloading, service workers) and ensured web accessibility compliance (WCAG/ADA) to improve site performance and user experience.
   - **Soft Skills:** Mentored a new employee and an intern (later hired full-time), providing technical guidance for onboarding and integration into the organization.
